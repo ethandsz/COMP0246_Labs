@@ -1,0 +1,123 @@
+[2.820s] DEBUG:colcon:Command line arguments: ['/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/colcon', 'build']
+[2.820s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x10c49c8e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x10c49c340>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x10c49c340>>)
+[3.478s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.479s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission'
+[3.480s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.480s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.480s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.480s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.480s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.480s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.481s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.481s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.481s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.585s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.585s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.585s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.585s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.586s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.586s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['ignore', 'ignore_ament_install']
+[3.586s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ignore'
+[3.586s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ignore_ament_install'
+[3.587s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['colcon_pkg']
+[3.587s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'colcon_pkg'
+[3.587s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['colcon_meta']
+[3.588s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'colcon_meta'
+[3.588s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['ros']
+[3.588s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ros'
+[3.588s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['cmake', 'python']
+[3.588s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'cmake'
+[3.588s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'python'
+[3.589s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['python_setup_py']
+[3.589s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'python_setup_py'
+[3.589s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.589s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.589s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.590s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.590s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.590s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.590s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.591s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.591s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.591s] Level 1:colcon.colcon_core.package_identification:_identify(transform_helpers) by extensions ['ignore', 'ignore_ament_install']
+[3.591s] Level 1:colcon.colcon_core.package_identification:_identify(transform_helpers) by extension 'ignore'
+[3.591s] Level 1:colcon.colcon_core.package_identification:_identify(transform_helpers) by extension 'ignore_ament_install'
+[3.592s] Level 1:colcon.colcon_core.package_identification:_identify(transform_helpers) by extensions ['colcon_pkg']
+[3.592s] Level 1:colcon.colcon_core.package_identification:_identify(transform_helpers) by extension 'colcon_pkg'
+[3.592s] Level 1:colcon.colcon_core.package_identification:_identify(transform_helpers) by extensions ['colcon_meta']
+[3.592s] Level 1:colcon.colcon_core.package_identification:_identify(transform_helpers) by extension 'colcon_meta'
+[3.592s] Level 1:colcon.colcon_core.package_identification:_identify(transform_helpers) by extensions ['ros']
+[3.592s] Level 1:colcon.colcon_core.package_identification:_identify(transform_helpers) by extension 'ros'
+[3.601s] DEBUG:colcon.colcon_core.package_identification:Package 'transform_helpers' with type 'ros.ament_python' and name 'transform_helpers'
+[3.601s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.601s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.601s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.601s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.675s] Level 5:colcon.colcon_core.verb:set package 'transform_helpers' build argument 'cmake_args' from command line to 'None'
+[3.675s] Level 5:colcon.colcon_core.verb:set package 'transform_helpers' build argument 'cmake_target' from command line to 'None'
+[3.676s] Level 5:colcon.colcon_core.verb:set package 'transform_helpers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.676s] Level 5:colcon.colcon_core.verb:set package 'transform_helpers' build argument 'cmake_clean_cache' from command line to 'False'
+[3.676s] Level 5:colcon.colcon_core.verb:set package 'transform_helpers' build argument 'cmake_clean_first' from command line to 'False'
+[3.676s] Level 5:colcon.colcon_core.verb:set package 'transform_helpers' build argument 'cmake_force_configure' from command line to 'False'
+[3.676s] Level 5:colcon.colcon_core.verb:set package 'transform_helpers' build argument 'ament_cmake_args' from command line to 'None'
+[3.676s] Level 5:colcon.colcon_core.verb:set package 'transform_helpers' build argument 'catkin_cmake_args' from command line to 'None'
+[3.676s] Level 5:colcon.colcon_core.verb:set package 'transform_helpers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.676s] DEBUG:colcon.colcon_core.verb:Building package 'transform_helpers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers', 'merge_install': False, 'path': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/transform_helpers', 'symlink_install': False, 'test_result_base': None}
+[3.677s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.680s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.681s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/transform_helpers' with build type 'ament_python'
+[3.681s] Level 1:colcon.colcon_core.shell:create_environment_hook('transform_helpers', 'ament_prefix_path')
+[3.691s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/hook/ament_prefix_path.ps1'
+[3.695s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/hook/ament_prefix_path.dsv'
+[3.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/hook/ament_prefix_path.sh'
+[3.701s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.701s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.969s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/transform_helpers'
+[5.971s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.971s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/transform_helpers': CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/transform_helpers build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/install.log --single-version-externally-managed install_data
+[12.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/transform_helpers' returned '0': CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/transform_helpers build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/install.log --single-version-externally-managed install_data
+[12.039s] Level 1:colcon.colcon_core.environment:checking '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers' for CMake module files
+[12.040s] Level 1:colcon.colcon_core.environment:checking '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers' for CMake config files
+[12.041s] Level 1:colcon.colcon_core.environment:checking '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib'
+[12.042s] Level 1:colcon.colcon_core.environment:checking '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/bin'
+[12.042s] Level 1:colcon.colcon_core.environment:checking '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/pkgconfig/transform_helpers.pc'
+[12.042s] Level 1:colcon.colcon_core.environment:checking '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages'
+[12.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('transform_helpers', 'pythonpath')
+[12.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/hook/pythonpath.ps1'
+[12.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/hook/pythonpath.dsv'
+[12.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/hook/pythonpath.sh'
+[12.046s] Level 1:colcon.colcon_core.environment:checking '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/bin'
+[12.046s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(transform_helpers)
+[12.047s] INFO:colcon.colcon_core.shell:Creating package script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/package.ps1'
+[12.049s] INFO:colcon.colcon_core.shell:Creating package descriptor '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/package.dsv'
+[12.050s] INFO:colcon.colcon_core.shell:Creating package script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/package.sh'
+[12.052s] INFO:colcon.colcon_core.shell:Creating package script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/package.bash'
+[12.054s] INFO:colcon.colcon_core.shell:Creating package script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/package.zsh'
+[12.056s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/colcon-core/packages/transform_helpers)
+[12.057s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.058s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.058s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.058s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.065s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[12.065s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Not used on non-Linux systems
+[12.065s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.065s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'terminal_notifier'
+[12.336s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.337s] INFO:colcon.colcon_core.shell:Creating prefix script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/local_setup.ps1'
+[12.341s] INFO:colcon.colcon_core.shell:Creating prefix util module '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/_local_setup_util_ps1.py'
+[12.346s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/setup.ps1'
+[12.349s] INFO:colcon.colcon_core.shell:Creating prefix script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/local_setup.sh'
+[12.351s] INFO:colcon.colcon_core.shell:Creating prefix util module '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/_local_setup_util_sh.py'
+[12.353s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/setup.sh'
+[12.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/local_setup.bash'
+[12.359s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/setup.bash'
+[12.362s] INFO:colcon.colcon_core.shell:Creating prefix script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/local_setup.zsh'
+[12.364s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/setup.zsh'

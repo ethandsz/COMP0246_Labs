@@ -1,0 +1,44 @@
+[5.161s] Invoking command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/transform_helpers': CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/transform_helpers build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/install.log --single-version-externally-managed install_data
+[6.834s] running egg_info
+[6.835s] creating ../build/transform_helpers/transform_helpers.egg-info
+[6.976s] writing ../build/transform_helpers/transform_helpers.egg-info/PKG-INFO
+[7.085s] writing dependency_links to ../build/transform_helpers/transform_helpers.egg-info/dependency_links.txt
+[7.367s] writing entry points to ../build/transform_helpers/transform_helpers.egg-info/entry_points.txt
+[7.538s] writing requirements to ../build/transform_helpers/transform_helpers.egg-info/requires.txt
+[7.629s] writing top-level names to ../build/transform_helpers/transform_helpers.egg-info/top_level.txt
+[7.630s] writing manifest file '../build/transform_helpers/transform_helpers.egg-info/SOURCES.txt'
+[7.785s] reading manifest file '../build/transform_helpers/transform_helpers.egg-info/SOURCES.txt'
+[7.787s] writing manifest file '../build/transform_helpers/transform_helpers.egg-info/SOURCES.txt'
+[7.787s] running build
+[7.788s] running build_py
+[7.788s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build
+[7.788s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib
+[7.789s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers
+[7.789s] copying transform_helpers/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers
+[7.789s] copying transform_helpers/utils.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers
+[7.789s] copying transform_helpers/main.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers
+[7.790s] running install
+[7.797s] running install_lib
+[7.909s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers
+[7.909s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers
+[7.910s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers/utils.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers
+[7.910s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers/main.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers
+[7.911s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers/__init__.py to __init__.cpython-310.pyc
+[7.912s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers/utils.py to utils.cpython-310.pyc
+[7.912s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers/main.py to main.cpython-310.pyc
+[7.915s] running install_data
+[7.915s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/ament_index
+[7.915s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/ament_index/resource_index
+[7.915s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/ament_index/resource_index/packages
+[7.916s] copying resource/transform_helpers -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/ament_index/resource_index/packages
+[7.916s] copying package.xml -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers
+[7.916s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/config
+[7.916s] copying config/viz.rviz -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/config
+[7.917s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/launch
+[7.917s] copying launch/bringup.launch.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/launch
+[7.918s] running install_egg_info
+[8.042s] Copying ../build/transform_helpers/transform_helpers.egg-info to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers-0.0.0-py3.10.egg-info
+[8.046s] running install_scripts
+[8.290s] Installing main script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/transform_helpers
+[8.291s] writing list of installed files to '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/install.log'
+[8.348s] Invoked command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/transform_helpers' returned '0': CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/transform_helpers build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/install.log --single-version-externally-managed install_data

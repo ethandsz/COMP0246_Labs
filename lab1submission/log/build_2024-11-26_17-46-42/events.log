@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000797] (transform_helpers) JobQueued: {'identifier': 'transform_helpers', 'dependencies': OrderedDict()}
+[0.001159] (transform_helpers) JobStarted: {'identifier': 'transform_helpers'}
+[0.103217] (-) TimerEvent: {}
+[0.204036] (-) TimerEvent: {}
+[0.304483] (-) TimerEvent: {}
+[0.404888] (-) TimerEvent: {}
+[0.509304] (-) TimerEvent: {}
+[0.613208] (-) TimerEvent: {}
+[0.716317] (-) TimerEvent: {}
+[0.817132] (-) TimerEvent: {}
+[0.917574] (-) TimerEvent: {}
+[1.018920] (-) TimerEvent: {}
+[1.119346] (-) TimerEvent: {}
+[1.219945] (-) TimerEvent: {}
+[1.320314] (-) TimerEvent: {}
+[1.420830] (-) TimerEvent: {}
+[1.521274] (-) TimerEvent: {}
+[1.622204] (-) TimerEvent: {}
+[1.722949] (-) TimerEvent: {}
+[1.823364] (-) TimerEvent: {}
+[1.923979] (-) TimerEvent: {}
+[2.025675] (-) TimerEvent: {}
+[2.126136] (-) TimerEvent: {}
+[2.229695] (-) TimerEvent: {}
+[2.333678] (-) TimerEvent: {}
+[2.435800] (-) TimerEvent: {}
+[2.536259] (-) TimerEvent: {}
+[2.638019] (-) TimerEvent: {}
+[2.738560] (-) TimerEvent: {}
+[2.839363] (-) TimerEvent: {}
+[2.940107] (-) TimerEvent: {}
+[3.040703] (-) TimerEvent: {}
+[3.143587] (-) TimerEvent: {}
+[3.246904] (-) TimerEvent: {}
+[3.347635] (-) TimerEvent: {}
+[3.448227] (-) TimerEvent: {}
+[3.550946] (-) TimerEvent: {}
+[3.651490] (-) TimerEvent: {}
+[3.753067] (-) TimerEvent: {}
+[3.855261] (-) TimerEvent: {}
+[3.956005] (-) TimerEvent: {}
+[4.060757] (-) TimerEvent: {}
+[4.162360] (-) TimerEvent: {}
+[4.262816] (-) TimerEvent: {}
+[4.363275] (-) TimerEvent: {}
+[4.464115] (-) TimerEvent: {}
+[4.565080] (-) TimerEvent: {}
+[4.665473] (-) TimerEvent: {}
+[4.767551] (-) TimerEvent: {}
+[4.868220] (-) TimerEvent: {}
+[4.968531] (-) TimerEvent: {}
+[5.071753] (-) TimerEvent: {}
+[5.159653] (transform_helpers) Command: {'cmd': ['/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/transform_helpers', 'build', '--build-base', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build', 'install', '--record', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/transform_helpers', 'env': {'TERM_PROGRAM': 'Apple_Terminal', 'PROJ_DATA': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/proj', 'TERM': 'xterm-256color', 'SHELL': '/bin/zsh', 'TMPDIR': '/var/folders/kt/9xpwlqks5rs0jycbsnb32wl80000gn/T/', 'CONDA_SHLVL': '2', 'CONDA_PROMPT_MODIFIER': '(roboenv-py3.10)', 'TERM_PROGRAM_VERSION': '452', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'ROS_PYTHON_VERSION': '3', 'ROS_VERSION': '2', 'TERM_SESSION_ID': 'B0A78304-A0C1-4026-AD96-D99DCE44C3EE', 'AMENT_PREFIX_PATH': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10', 'USER': 'ethandsouza', 'CONDA_EXE': '/Users/ethandsouza/miniforge3/bin/conda', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.kNtCmYKbfm/Listeners', '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0', 'ROS_OS_OVERRIDE': 'conda:osx', '_CE_CONDA': '', 'CONDA_PREFIX_1': '/Users/ethandsouza/miniforge3', 'PATH': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin:/Users/ethandsouza/miniforge3/condabin:/Users/ethandsouza/development/tools/flutter/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands', 'PROJ_NETWORK': 'ON', 'GSETTINGS_SCHEMA_DIR': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/glib-2.0/schemas', 'XML_CATALOG_FILES': 'file:///Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/xml/catalog file:///etc/xml/catalog', 'CONDA_PREFIX': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10', '__CFBundleIdentifier': 'com.apple.Terminal', 'PWD': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers', 'COLCON': '1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XPC_FLAGS': '0x0', '_CE_M': '', 'XPC_SERVICE_NAME': '0', 'HOME': '/Users/ethandsouza', 'SHLVL': '2', 'ROS_DISTRO': 'humble', 'PYTHONPATH': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python310/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages', 'CONDA_PYTHON_EXE': '/Users/ethandsouza/miniforge3/bin/python', 'LOGNAME': 'ethandsouza', 'CONDA_DEFAULT_ENV': 'roboenv-py3.10', 'ROS_LOCALHOST_ONLY': '0', 'ROS_ETC_DIR': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/ros', '_': '/usr/bin/env'}, 'shell': False}
+[5.173788] (-) TimerEvent: {}
+[5.275158] (-) TimerEvent: {}
+[5.380472] (-) TimerEvent: {}
+[5.481732] (-) TimerEvent: {}
+[5.584474] (-) TimerEvent: {}
+[5.684843] (-) TimerEvent: {}
+[5.785213] (-) TimerEvent: {}
+[5.887051] (-) TimerEvent: {}
+[5.987367] (-) TimerEvent: {}
+[6.089743] (-) TimerEvent: {}
+[6.194026] (-) TimerEvent: {}
+[6.295103] (-) TimerEvent: {}
+[6.396596] (-) TimerEvent: {}
+[6.500753] (-) TimerEvent: {}
+[6.605727] (-) TimerEvent: {}
+[6.711003] (-) TimerEvent: {}
+[6.812211] (-) TimerEvent: {}
+[6.835384] (transform_helpers) StdoutLine: {'line': b'running egg_info\n'}
+[6.836346] (transform_helpers) StdoutLine: {'line': b'creating ../build/transform_helpers/transform_helpers.egg-info\n'}
+[6.912313] (-) TimerEvent: {}
+[6.977562] (transform_helpers) StdoutLine: {'line': b'writing ../build/transform_helpers/transform_helpers.egg-info/PKG-INFO\n'}
+[7.016080] (-) TimerEvent: {}
+[7.086261] (transform_helpers) StdoutLine: {'line': b'writing dependency_links to ../build/transform_helpers/transform_helpers.egg-info/dependency_links.txt\n'}
+[7.117770] (-) TimerEvent: {}
+[7.218356] (-) TimerEvent: {}
+[7.321002] (-) TimerEvent: {}
+[7.367704] (transform_helpers) StdoutLine: {'line': b'writing entry points to ../build/transform_helpers/transform_helpers.egg-info/entry_points.txt\n'}
+[7.426093] (-) TimerEvent: {}
+[7.526453] (-) TimerEvent: {}
+[7.539785] (transform_helpers) StdoutLine: {'line': b'writing requirements to ../build/transform_helpers/transform_helpers.egg-info/requires.txt\n'}
+[7.626663] (-) TimerEvent: {}
+[7.630256] (transform_helpers) StdoutLine: {'line': b'writing top-level names to ../build/transform_helpers/transform_helpers.egg-info/top_level.txt\n'}
+[7.630871] (transform_helpers) StdoutLine: {'line': b"writing manifest file '../build/transform_helpers/transform_helpers.egg-info/SOURCES.txt'\n"}
+[7.730762] (-) TimerEvent: {}
+[7.786703] (transform_helpers) StdoutLine: {'line': b"reading manifest file '../build/transform_helpers/transform_helpers.egg-info/SOURCES.txt'\n"}
+[7.788144] (transform_helpers) StdoutLine: {'line': b"writing manifest file '../build/transform_helpers/transform_helpers.egg-info/SOURCES.txt'\n"}
+[7.788541] (transform_helpers) StdoutLine: {'line': b'running build\n'}
+[7.789099] (transform_helpers) StdoutLine: {'line': b'running build_py\n'}
+[7.789486] (transform_helpers) StdoutLine: {'line': b'creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build\n'}
+[7.789719] (transform_helpers) StdoutLine: {'line': b'creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib\n'}
+[7.789896] (transform_helpers) StdoutLine: {'line': b'creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers\n'}
+[7.790038] (transform_helpers) StdoutLine: {'line': b'copying transform_helpers/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers\n'}
+[7.790316] (transform_helpers) StdoutLine: {'line': b'copying transform_helpers/utils.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers\n'}
+[7.790555] (transform_helpers) StdoutLine: {'line': b'copying transform_helpers/main.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers\n'}
+[7.791583] (transform_helpers) StdoutLine: {'line': b'running install\n'}
+[7.798331] (transform_helpers) StdoutLine: {'line': b'running install_lib\n'}
+[7.834668] (-) TimerEvent: {}
+[7.910127] (transform_helpers) StdoutLine: {'line': b'creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers\n'}
+[7.910549] (transform_helpers) StdoutLine: {'line': b'copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers\n'}
+[7.910887] (transform_helpers) StdoutLine: {'line': b'copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers/utils.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers\n'}
+[7.911370] (transform_helpers) StdoutLine: {'line': b'copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/build/lib/transform_helpers/main.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers\n'}
+[7.912227] (transform_helpers) StdoutLine: {'line': b'byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers/__init__.py to __init__.cpython-310.pyc\n'}
+[7.912905] (transform_helpers) StdoutLine: {'line': b'byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers/utils.py to utils.cpython-310.pyc\n'}
+[7.913780] (transform_helpers) StdoutLine: {'line': b'byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers/main.py to main.cpython-310.pyc\n'}
+[7.915633] (transform_helpers) StdoutLine: {'line': b'running install_data\n'}
+[7.916129] (transform_helpers) StdoutLine: {'line': b'creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/ament_index\n'}
+[7.916289] (transform_helpers) StdoutLine: {'line': b'creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/ament_index/resource_index\n'}
+[7.916626] (transform_helpers) StdoutLine: {'line': b'creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/ament_index/resource_index/packages\n'}
+[7.917025] (transform_helpers) StdoutLine: {'line': b'copying resource/transform_helpers -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/ament_index/resource_index/packages\n'}
+[7.917477] (transform_helpers) StdoutLine: {'line': b'copying package.xml -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers\n'}
+[7.917630] (transform_helpers) StdoutLine: {'line': b'creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/config\n'}
+[7.917758] (transform_helpers) StdoutLine: {'line': b'copying config/viz.rviz -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/config\n'}
+[7.918487] (transform_helpers) StdoutLine: {'line': b'creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/launch\n'}
+[7.918861] (transform_helpers) StdoutLine: {'line': b'copying launch/bringup.launch.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/share/transform_helpers/launch\n'}
+[7.919502] (transform_helpers) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.934990] (-) TimerEvent: {}
+[8.036397] (-) TimerEvent: {}
+[8.042994] (transform_helpers) StdoutLine: {'line': b'Copying ../build/transform_helpers/transform_helpers.egg-info to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/python3.10/site-packages/transform_helpers-0.0.0-py3.10.egg-info\n'}
+[8.047626] (transform_helpers) StdoutLine: {'line': b'running install_scripts\n'}
+[8.136981] (-) TimerEvent: {}
+[8.239747] (-) TimerEvent: {}
+[8.291368] (transform_helpers) StdoutLine: {'line': b'Installing main script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install/transform_helpers/lib/transform_helpers\n'}
+[8.292366] (transform_helpers) StdoutLine: {'line': b"writing list of installed files to '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/build/transform_helpers/install.log'\n"}
+[8.341566] (-) TimerEvent: {}
+[8.349182] (transform_helpers) CommandEnded: {'returncode': 0}
+[8.376886] (transform_helpers) JobEnded: {'identifier': 'transform_helpers', 'rc': 0}
+[8.378664] (-) EventReactorShutdown: {}
