@@ -34,10 +34,6 @@ _colcon_prefix_chain_sh_source_script() {
 COLCON_CURRENT_PREFIX="/Users/ethandsouza/miniforge3/envs/roboenv-py3.10"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
-# setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
-COLCON_CURRENT_PREFIX="/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install"
-_colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
-
 
 # source this prefix
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script

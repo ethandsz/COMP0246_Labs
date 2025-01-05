@@ -1,0 +1,69 @@
+[3.452s] Invoking command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/final_lab/youbot_description': CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/youbot_description build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/install.log --single-version-externally-managed install_data
+[4.967s] running egg_info
+[4.968s] creating ../../build/youbot_description/youbot_description.egg-info
+[5.074s] writing ../../build/youbot_description/youbot_description.egg-info/PKG-INFO
+[5.156s] writing dependency_links to ../../build/youbot_description/youbot_description.egg-info/dependency_links.txt
+[5.565s] writing requirements to ../../build/youbot_description/youbot_description.egg-info/requires.txt
+[5.646s] writing top-level names to ../../build/youbot_description/youbot_description.egg-info/top_level.txt
+[5.646s] writing manifest file '../../build/youbot_description/youbot_description.egg-info/SOURCES.txt'
+[5.787s] reading manifest file '../../build/youbot_description/youbot_description.egg-info/SOURCES.txt'
+[5.788s] writing manifest file '../../build/youbot_description/youbot_description.egg-info/SOURCES.txt'
+[5.789s] running build
+[5.789s] running build_py
+[5.790s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build
+[5.790s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build/lib
+[5.790s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build/lib/youbot_description
+[5.790s] copying youbot_description/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build/lib/youbot_description
+[5.790s] running install
+[5.797s] running install_lib
+[5.908s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages/youbot_description
+[5.909s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build/lib/youbot_description/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages/youbot_description
+[5.910s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages/youbot_description/__init__.py to __init__.cpython-310.pyc
+[5.911s] running install_data
+[5.911s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/ament_index
+[5.911s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/ament_index/resource_index
+[5.912s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/ament_index/resource_index/packages
+[5.912s] copying resource/youbot_description -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/ament_index/resource_index/packages
+[5.913s] copying package.xml -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description
+[5.913s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/urdfs
+[5.913s] copying urdfs/youbot.urdf -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/urdfs
+[5.914s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes
+[5.915s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.915s] copying meshes/sensors/asus_xtion_pro_live_base.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.917s] copying meshes/sensors/hokuyo_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.918s] copying meshes/sensors/asus_xtion_pro_live_camera.png -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.919s] copying meshes/sensors/kinect.tga -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.921s] copying meshes/sensors/asus_xtion_pro_live_camera.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.925s] copying meshes/sensors/hokuyo.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.929s] copying meshes/sensors/asus_xtion_pro_live_base.png -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.930s] copying meshes/sensors/microsoft_lifecam.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.936s] copying meshes/sensors/kinect.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/sensors
+[5.944s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_plate
+[5.944s] copying meshes/youbot_plate/plate_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_plate
+[5.945s] copying meshes/youbot_plate/plate.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_plate
+[5.947s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.947s] copying meshes/youbot_arm/arm1.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.955s] copying meshes/youbot_arm/arm0.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.961s] copying meshes/youbot_arm/arm2.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.966s] copying meshes/youbot_arm/arm3.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.970s] copying meshes/youbot_arm/arm0_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.971s] copying meshes/youbot_arm/arm5_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.972s] copying meshes/youbot_arm/arm4.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.976s] copying meshes/youbot_arm/arm5.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.978s] copying meshes/youbot_arm/arm2_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.980s] copying meshes/youbot_arm/arm4_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.983s] copying meshes/youbot_arm/arm1_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.984s] copying meshes/youbot_arm/arm3_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_arm
+[5.985s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_gripper
+[5.986s] copying meshes/youbot_gripper/palm_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_gripper
+[5.988s] copying meshes/youbot_gripper/finger_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_gripper
+[5.989s] copying meshes/youbot_gripper/palm.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_gripper
+[5.992s] copying meshes/youbot_gripper/finger.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_gripper
+[5.993s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_base
+[5.994s] copying meshes/youbot_base/base.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_base
+[5.999s] copying meshes/youbot_base/base_convex.dae -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/share/youbot_description/meshes/youbot_base
+[6.002s] running install_egg_info
+[6.159s] Copying ../../build/youbot_description/youbot_description.egg-info to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages/youbot_description-0.0.0-py3.10.egg-info
+[6.164s] running install_scripts
+[6.396s] writing list of installed files to '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/install.log'
+[6.448s] Invoked command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/final_lab/youbot_description' returned '0': CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/youbot_description build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/install.log --single-version-externally-managed install_data

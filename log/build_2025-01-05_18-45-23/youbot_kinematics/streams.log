@@ -1,0 +1,72 @@
+[3.216s] Invoking command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/final_lab/youbot_kinematics': AMENT_PREFIX_PATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers/lib/python3.10/site-packages:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/youbot_kinematics build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/install.log --single-version-externally-managed install_data
+[4.636s] running egg_info
+[4.636s] creating ../../build/youbot_kinematics/youbot_kinematics.egg-info
+[4.739s] writing ../../build/youbot_kinematics/youbot_kinematics.egg-info/PKG-INFO
+[4.816s] writing dependency_links to ../../build/youbot_kinematics/youbot_kinematics.egg-info/dependency_links.txt
+[5.053s] writing entry points to ../../build/youbot_kinematics/youbot_kinematics.egg-info/entry_points.txt
+[5.206s] writing requirements to ../../build/youbot_kinematics/youbot_kinematics.egg-info/requires.txt
+[5.282s] writing top-level names to ../../build/youbot_kinematics/youbot_kinematics.egg-info/top_level.txt
+[5.283s] writing manifest file '../../build/youbot_kinematics/youbot_kinematics.egg-info/SOURCES.txt'
+[5.417s] reading manifest file '../../build/youbot_kinematics/youbot_kinematics.egg-info/SOURCES.txt'
+[5.418s] writing manifest file '../../build/youbot_kinematics/youbot_kinematics.egg-info/SOURCES.txt'
+[5.418s] running build
+[5.419s] running build_py
+[5.419s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build
+[5.419s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib
+[5.420s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics
+[5.420s] copying youbot_kinematics/youbotKineStudent.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics
+[5.420s] copying youbot_kinematics/urdf_parser.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics
+[5.421s] copying youbot_kinematics/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics
+[5.421s] copying youbot_kinematics/youbotKineKDL.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics
+[5.422s] copying youbot_kinematics/youbotKineBase.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics
+[5.423s] copying youbot_kinematics/plan_trajectory.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics
+[5.425s] copying youbot_kinematics/urdf.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics
+[5.426s] copying youbot_kinematics/target_data.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics
+[5.428s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/xml_reflection
+[5.428s] copying youbot_kinematics/xml_reflection/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/xml_reflection
+[5.428s] copying youbot_kinematics/xml_reflection/core.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/xml_reflection
+[5.430s] copying youbot_kinematics/xml_reflection/basics.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/xml_reflection
+[5.432s] running install
+[5.439s] running install_lib
+[5.545s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics
+[5.546s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/youbotKineStudent.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics
+[5.546s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/xml_reflection
+[5.546s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/xml_reflection/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/xml_reflection
+[5.547s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/xml_reflection/core.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/xml_reflection
+[5.547s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/xml_reflection/basics.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/xml_reflection
+[5.548s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/urdf_parser.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics
+[5.548s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/__init__.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics
+[5.548s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/youbotKineKDL.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics
+[5.549s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/youbotKineBase.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics
+[5.550s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/plan_trajectory.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics
+[5.550s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/urdf.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics
+[5.551s] copying /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build/lib/youbot_kinematics/target_data.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics
+[5.553s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/youbotKineStudent.py to youbotKineStudent.cpython-310.pyc
+[5.557s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/xml_reflection/__init__.py to __init__.cpython-310.pyc
+[5.557s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/xml_reflection/core.py to core.cpython-310.pyc
+[5.566s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/xml_reflection/basics.py to basics.cpython-310.pyc
+[5.568s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/urdf_parser.py to urdf_parser.cpython-310.pyc
+[5.577s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/__init__.py to __init__.cpython-310.pyc
+[5.577s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/youbotKineKDL.py to youbotKineKDL.cpython-310.pyc
+[5.581s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/youbotKineBase.py to youbotKineBase.cpython-310.pyc
+[5.583s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/plan_trajectory.py to plan_trajectory.cpython-310.pyc
+[5.585s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/urdf.py to urdf.cpython-310.pyc
+[5.587s] byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/target_data.py to target_data.cpython-310.pyc
+[5.589s] running install_data
+[5.589s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/share/ament_index
+[5.589s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/share/ament_index/resource_index
+[5.590s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/share/ament_index/resource_index/packages
+[5.590s] copying resource/youbot_kinematics -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/share/ament_index/resource_index/packages
+[5.590s] copying package.xml -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/share/youbot_kinematics
+[5.591s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/share/youbot_kinematics/config
+[5.591s] copying config/viz.rviz -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/share/youbot_kinematics/config
+[5.592s] creating /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/share/youbot_kinematics/launch
+[5.593s] copying launch/bringup.launch.py -> /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/share/youbot_kinematics/launch
+[5.593s] running install_egg_info
+[5.710s] Copying ../../build/youbot_kinematics/youbot_kinematics.egg-info to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics-0.0.0-py3.10.egg-info
+[5.716s] running install_scripts
+[6.000s] Installing main_kdl script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/youbot_kinematics
+[6.001s] Installing main_student script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/youbot_kinematics
+[6.002s] Installing plan_trajectory script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/youbot_kinematics
+[6.003s] writing list of installed files to '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/install.log'
+[6.079s] Invoked command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/final_lab/youbot_kinematics' returned '0': AMENT_PREFIX_PATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers/lib/python3.10/site-packages:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/youbot_kinematics build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/install.log --single-version-externally-managed install_data

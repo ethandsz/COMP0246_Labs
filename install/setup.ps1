@@ -23,7 +23,6 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/Users/ethandsouza/miniforge3/envs/roboenv-py3.10\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/install\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)
