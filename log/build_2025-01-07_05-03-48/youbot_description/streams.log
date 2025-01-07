@@ -1,0 +1,19 @@
+[4.234s] Invoking command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/final_lab/youbot_description': CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/youbot_description build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/install.log --single-version-externally-managed install_data
+[5.980s] running egg_info
+[6.103s] writing ../../build/youbot_description/youbot_description.egg-info/PKG-INFO
+[6.193s] writing dependency_links to ../../build/youbot_description/youbot_description.egg-info/dependency_links.txt
+[6.652s] writing requirements to ../../build/youbot_description/youbot_description.egg-info/requires.txt
+[6.742s] writing top-level names to ../../build/youbot_description/youbot_description.egg-info/top_level.txt
+[6.900s] reading manifest file '../../build/youbot_description/youbot_description.egg-info/SOURCES.txt'
+[6.904s] writing manifest file '../../build/youbot_description/youbot_description.egg-info/SOURCES.txt'
+[6.904s] running build
+[6.904s] running build_py
+[6.905s] running install
+[6.912s] running install_lib
+[7.037s] running install_data
+[7.039s] running install_egg_info
+[7.162s] removing '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages/youbot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[7.163s] Copying ../../build/youbot_description/youbot_description.egg-info to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages/youbot_description-0.0.0-py3.10.egg-info
+[7.168s] running install_scripts
+[7.432s] writing list of installed files to '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/install.log'
+[7.485s] Invoked command in '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/final_lab/youbot_description' returned '0': CONDA_PROMPT_MODIFIER=(roboenv-py3.10) PYTHONPATH=/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/youbot_description build --build-base /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build install --record /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/install.log --single-version-externally-managed install_data

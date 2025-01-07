@@ -17,6 +17,7 @@ test/test_pep257.py
 youbot_kinematics/__init__.py
 youbot_kinematics/plan_trajectory.py
 youbot_kinematics/target_data.py
+youbot_kinematics/trajectory_visualizer.py
 youbot_kinematics/urdf.py
 youbot_kinematics/urdf_parser.py
 youbot_kinematics/youbotKineBase.py

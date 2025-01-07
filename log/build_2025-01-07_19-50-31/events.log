@@ -1,0 +1,822 @@
+[0.000000] (-) TimerEvent: {}
+[0.000652] (franka_description) JobQueued: {'identifier': 'franka_description', 'dependencies': OrderedDict()}
+[0.000949] (youbot_description) JobQueued: {'identifier': 'youbot_description', 'dependencies': OrderedDict()}
+[0.001016] (transform_helpers) JobQueued: {'identifier': 'transform_helpers', 'dependencies': OrderedDict([('franka_description', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description')])}
+[0.001067] (youbot_kinematics) JobQueued: {'identifier': 'youbot_kinematics', 'dependencies': OrderedDict([('franka_description', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description'), ('youbot_description', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description'), ('transform_helpers', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers')])}
+[0.001119] (franka_description) JobStarted: {'identifier': 'franka_description'}
+[0.024929] (youbot_description) JobStarted: {'identifier': 'youbot_description'}
+[0.047422] (franka_description) JobProgress: {'identifier': 'franka_description', 'progress': 'cmake'}
+[0.050321] (franka_description) JobProgress: {'identifier': 'franka_description', 'progress': 'build'}
+[0.051600] (franka_description) Command: {'cmd': ['/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/cmake', '--build', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/franka_description', '--', '-j8', '-l8'], 'cwd': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/franka_description', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('PROJ_DATA', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/proj'), ('TERM', 'xterm-256color'), ('SHELL', '/bin/zsh'), ('TMPDIR', '/var/folders/kt/9xpwlqks5rs0jycbsnb32wl80000gn/T/'), ('CONDA_SHLVL', '2'), ('CONDA_PROMPT_MODIFIER', '(roboenv-py3.10)'), ('TERM_PROGRAM_VERSION', '452'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('TERM_SESSION_ID', 'D88054F9-133C-4FE2-BA4B-B478BBD6E64A'), ('AMENT_PREFIX_PATH', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10'), ('USER', 'ethandsouza'), ('CONDA_EXE', '/Users/ethandsouza/miniforge3/bin/conda'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.idb6ZUpnbQ/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x0'), ('ROS_OS_OVERRIDE', 'conda:osx'), ('_CE_CONDA', ''), ('CONDA_PREFIX_1', '/Users/ethandsouza/miniforge3'), ('PATH', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin:/Users/ethandsouza/miniforge3/condabin:/Users/ethandsouza/development/tools/flutter/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands'), ('PROJ_NETWORK', 'ON'), ('GSETTINGS_SCHEMA_DIR', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/glib-2.0/schemas'), ('XML_CATALOG_FILES', 'file:///Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/xml/catalog file:///etc/xml/catalog'), ('LaunchInstanceID', '70DC467A-383F-4F2F-9715-0391C6D35898'), ('CONDA_PREFIX', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/franka_description'), ('COLCON', '1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XPC_FLAGS', '0x0'), ('_CE_M', ''), ('XPC_SERVICE_NAME', '0'), ('HOME', '/Users/ethandsouza'), ('SHLVL', '2'), ('ROS_DISTRO', 'humble'), ('PYTHONPATH', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python310/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages'), ('CONDA_PYTHON_EXE', '/Users/ethandsouza/miniforge3/bin/python'), ('LOGNAME', 'ethandsouza'), ('CONDA_DEFAULT_ENV', 'roboenv-py3.10'), ('ROS_LOCALHOST_ONLY', '0'), ('SECURITYSESSIONID', '186a3'), ('ROS_ETC_DIR', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/ros'), ('_', '/usr/bin/env'), ('CMAKE_PREFIX_PATH', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10')]), 'shell': False}
+[0.101631] (-) TimerEvent: {}
+[0.202904] (-) TimerEvent: {}
+[0.303281] (-) TimerEvent: {}
+[0.404986] (-) TimerEvent: {}
+[0.508727] (-) TimerEvent: {}
+[0.614011] (-) TimerEvent: {}
+[0.714337] (-) TimerEvent: {}
+[0.817161] (-) TimerEvent: {}
+[0.922461] (-) TimerEvent: {}
+[1.026149] (-) TimerEvent: {}
+[1.126772] (-) TimerEvent: {}
+[1.228887] (-) TimerEvent: {}
+[1.329990] (-) TimerEvent: {}
+[1.474931] (-) TimerEvent: {}
+[1.577889] (-) TimerEvent: {}
+[1.678352] (-) TimerEvent: {}
+[1.779033] (-) TimerEvent: {}
+[1.880058] (-) TimerEvent: {}
+[1.980479] (-) TimerEvent: {}
+[2.080946] (-) TimerEvent: {}
+[2.184070] (-) TimerEvent: {}
+[2.285621] (-) TimerEvent: {}
+[2.386712] (-) TimerEvent: {}
+[2.487588] (-) TimerEvent: {}
+[2.588607] (-) TimerEvent: {}
+[2.691509] (-) TimerEvent: {}
+[2.794084] (-) TimerEvent: {}
+[2.896999] (-) TimerEvent: {}
+[3.000249] (-) TimerEvent: {}
+[3.101193] (-) TimerEvent: {}
+[3.204182] (-) TimerEvent: {}
+[3.305376] (-) TimerEvent: {}
+[3.407185] (-) TimerEvent: {}
+[3.508856] (-) TimerEvent: {}
+[3.609234] (-) TimerEvent: {}
+[3.709795] (-) TimerEvent: {}
+[3.811777] (-) TimerEvent: {}
+[3.864781] (youbot_description) Command: {'cmd': ['/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/youbot_description', 'build', '--build-base', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/build', 'install', '--record', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/final_lab/youbot_description', 'env': {'TERM_PROGRAM': 'Apple_Terminal', 'PROJ_DATA': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/proj', 'TERM': 'xterm-256color', 'SHELL': '/bin/zsh', 'TMPDIR': '/var/folders/kt/9xpwlqks5rs0jycbsnb32wl80000gn/T/', 'CONDA_SHLVL': '2', 'CONDA_PROMPT_MODIFIER': '(roboenv-py3.10)', 'TERM_PROGRAM_VERSION': '452', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'ROS_PYTHON_VERSION': '3', 'ROS_VERSION': '2', 'TERM_SESSION_ID': 'D88054F9-133C-4FE2-BA4B-B478BBD6E64A', 'AMENT_PREFIX_PATH': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10', 'USER': 'ethandsouza', 'CONDA_EXE': '/Users/ethandsouza/miniforge3/bin/conda', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.idb6ZUpnbQ/Listeners', '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0', 'ROS_OS_OVERRIDE': 'conda:osx', '_CE_CONDA': '', 'CONDA_PREFIX_1': '/Users/ethandsouza/miniforge3', 'PATH': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin:/Users/ethandsouza/miniforge3/condabin:/Users/ethandsouza/development/tools/flutter/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands', 'PROJ_NETWORK': 'ON', 'GSETTINGS_SCHEMA_DIR': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/glib-2.0/schemas', 'XML_CATALOG_FILES': 'file:///Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/xml/catalog file:///etc/xml/catalog', 'LaunchInstanceID': '70DC467A-383F-4F2F-9715-0391C6D35898', 'CONDA_PREFIX': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10', '__CFBundleIdentifier': 'com.apple.Terminal', 'PWD': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description', 'COLCON': '1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XPC_FLAGS': '0x0', '_CE_M': '', 'XPC_SERVICE_NAME': '0', 'HOME': '/Users/ethandsouza', 'SHLVL': '2', 'ROS_DISTRO': 'humble', 'PYTHONPATH': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python310/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages', 'CONDA_PYTHON_EXE': '/Users/ethandsouza/miniforge3/bin/python', 'LOGNAME': 'ethandsouza', 'CONDA_DEFAULT_ENV': 'roboenv-py3.10', 'ROS_LOCALHOST_ONLY': '0', 'SECURITYSESSIONID': '186a3', 'ROS_ETC_DIR': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/ros', '_': '/usr/bin/env'}, 'shell': False}
+[3.916877] (-) TimerEvent: {}
+[4.020087] (-) TimerEvent: {}
+[4.124781] (-) TimerEvent: {}
+[4.226324] (-) TimerEvent: {}
+[4.327631] (-) TimerEvent: {}
+[4.431979] (-) TimerEvent: {}
+[4.534621] (-) TimerEvent: {}
+[4.637131] (-) TimerEvent: {}
+[4.741449] (-) TimerEvent: {}
+[4.845556] (-) TimerEvent: {}
+[4.946054] (-) TimerEvent: {}
+[5.048556] (-) TimerEvent: {}
+[5.150530] (-) TimerEvent: {}
+[5.251464] (-) TimerEvent: {}
+[5.352450] (-) TimerEvent: {}
+[5.456971] (-) TimerEvent: {}
+[5.461410] (youbot_description) StdoutLine: {'line': b'running egg_info\n'}
+[5.560715] (-) TimerEvent: {}
+[5.571557] (youbot_description) StdoutLine: {'line': b'writing ../../build/youbot_description/youbot_description.egg-info/PKG-INFO\n'}
+[5.659688] (youbot_description) StdoutLine: {'line': b'writing dependency_links to ../../build/youbot_description/youbot_description.egg-info/dependency_links.txt\n'}
+[5.660939] (-) TimerEvent: {}
+[5.764847] (-) TimerEvent: {}
+[5.866899] (-) TimerEvent: {}
+[5.967498] (-) TimerEvent: {}
+[6.070259] (-) TimerEvent: {}
+[6.084711] (youbot_description) StdoutLine: {'line': b'writing requirements to ../../build/youbot_description/youbot_description.egg-info/requires.txt\n'}
+[6.170511] (-) TimerEvent: {}
+[6.181599] (youbot_description) StdoutLine: {'line': b'writing top-level names to ../../build/youbot_description/youbot_description.egg-info/top_level.txt\n'}
+[6.272398] (-) TimerEvent: {}
+[6.329109] (youbot_description) StdoutLine: {'line': b"reading manifest file '../../build/youbot_description/youbot_description.egg-info/SOURCES.txt'\n"}
+[6.331509] (youbot_description) StdoutLine: {'line': b"writing manifest file '../../build/youbot_description/youbot_description.egg-info/SOURCES.txt'\n"}
+[6.331966] (youbot_description) StdoutLine: {'line': b'running build\n'}
+[6.332157] (youbot_description) StdoutLine: {'line': b'running build_py\n'}
+[6.332520] (youbot_description) StdoutLine: {'line': b'running install\n'}
+[6.339150] (youbot_description) StdoutLine: {'line': b'running install_lib\n'}
+[6.375191] (-) TimerEvent: {}
+[6.450022] (youbot_description) StdoutLine: {'line': b'running install_data\n'}
+[6.451556] (youbot_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.478129] (-) TimerEvent: {}
+[6.567368] (youbot_description) StdoutLine: {'line': b"removing '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages/youbot_description-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.568322] (youbot_description) StdoutLine: {'line': b'Copying ../../build/youbot_description/youbot_description.egg-info to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages/youbot_description-0.0.0-py3.10.egg-info\n'}
+[6.574041] (youbot_description) StdoutLine: {'line': b'running install_scripts\n'}
+[6.578231] (-) TimerEvent: {}
+[6.678884] (-) TimerEvent: {}
+[6.781575] (-) TimerEvent: {}
+[6.813532] (youbot_description) StdoutLine: {'line': b"writing list of installed files to '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_description/install.log'\n"}
+[6.865813] (youbot_description) CommandEnded: {'returncode': 0}
+[6.882466] (-) TimerEvent: {}
+[6.894418] (youbot_description) JobEnded: {'identifier': 'youbot_description', 'rc': 0}
+[6.987580] (-) TimerEvent: {}
+[7.090147] (-) TimerEvent: {}
+[7.195486] (-) TimerEvent: {}
+[7.300855] (-) TimerEvent: {}
+[7.401587] (-) TimerEvent: {}
+[7.503799] (-) TimerEvent: {}
+[7.606335] (-) TimerEvent: {}
+[7.708933] (-) TimerEvent: {}
+[7.810085] (-) TimerEvent: {}
+[7.912862] (-) TimerEvent: {}
+[8.016564] (-) TimerEvent: {}
+[8.117630] (-) TimerEvent: {}
+[8.218307] (-) TimerEvent: {}
+[8.319413] (-) TimerEvent: {}
+[8.424716] (-) TimerEvent: {}
+[8.525819] (-) TimerEvent: {}
+[8.626221] (-) TimerEvent: {}
+[8.730544] (-) TimerEvent: {}
+[8.834385] (-) TimerEvent: {}
+[8.939490] (-) TimerEvent: {}
+[9.040005] (-) TimerEvent: {}
+[9.140601] (-) TimerEvent: {}
+[9.245439] (-) TimerEvent: {}
+[9.345921] (-) TimerEvent: {}
+[9.450457] (-) TimerEvent: {}
+[9.552480] (-) TimerEvent: {}
+[9.652773] (-) TimerEvent: {}
+[9.753514] (-) TimerEvent: {}
+[9.858827] (-) TimerEvent: {}
+[9.959737] (-) TimerEvent: {}
+[10.063622] (-) TimerEvent: {}
+[10.168163] (-) TimerEvent: {}
+[10.271448] (-) TimerEvent: {}
+[10.374696] (-) TimerEvent: {}
+[10.477516] (-) TimerEvent: {}
+[10.579453] (-) TimerEvent: {}
+[10.680006] (-) TimerEvent: {}
+[10.782285] (-) TimerEvent: {}
+[10.882711] (-) TimerEvent: {}
+[10.983331] (-) TimerEvent: {}
+[11.084076] (-) TimerEvent: {}
+[11.188191] (-) TimerEvent: {}
+[11.288639] (-) TimerEvent: {}
+[11.390540] (-) TimerEvent: {}
+[11.491342] (-) TimerEvent: {}
+[11.591729] (-) TimerEvent: {}
+[11.693405] (-) TimerEvent: {}
+[11.795668] (-) TimerEvent: {}
+[11.901142] (-) TimerEvent: {}
+[12.002533] (-) TimerEvent: {}
+[12.103394] (-) TimerEvent: {}
+[12.204916] (-) TimerEvent: {}
+[12.306381] (-) TimerEvent: {}
+[12.408032] (-) TimerEvent: {}
+[12.508310] (-) TimerEvent: {}
+[12.608645] (-) TimerEvent: {}
+[12.709831] (-) TimerEvent: {}
+[12.814684] (-) TimerEvent: {}
+[12.915296] (-) TimerEvent: {}
+[13.015819] (-) TimerEvent: {}
+[13.116229] (-) TimerEvent: {}
+[13.218063] (-) TimerEvent: {}
+[13.321928] (-) TimerEvent: {}
+[13.425845] (-) TimerEvent: {}
+[13.526420] (-) TimerEvent: {}
+[13.630074] (-) TimerEvent: {}
+[13.730695] (-) TimerEvent: {}
+[13.831876] (-) TimerEvent: {}
+[13.932497] (-) TimerEvent: {}
+[14.032999] (-) TimerEvent: {}
+[14.134801] (-) TimerEvent: {}
+[14.235304] (-) TimerEvent: {}
+[14.336036] (-) TimerEvent: {}
+[14.436328] (-) TimerEvent: {}
+[14.540382] (-) TimerEvent: {}
+[14.641690] (-) TimerEvent: {}
+[14.746554] (-) TimerEvent: {}
+[14.850054] (-) TimerEvent: {}
+[14.953436] (-) TimerEvent: {}
+[15.056592] (-) TimerEvent: {}
+[15.159120] (-) TimerEvent: {}
+[15.263816] (-) TimerEvent: {}
+[15.365110] (-) TimerEvent: {}
+[15.465882] (-) TimerEvent: {}
+[15.567053] (-) TimerEvent: {}
+[15.667992] (-) TimerEvent: {}
+[15.770299] (-) TimerEvent: {}
+[15.871069] (-) TimerEvent: {}
+[15.971368] (-) TimerEvent: {}
+[16.074301] (-) TimerEvent: {}
+[16.174654] (-) TimerEvent: {}
+[16.277627] (-) TimerEvent: {}
+[16.378470] (-) TimerEvent: {}
+[16.483857] (-) TimerEvent: {}
+[16.586151] (-) TimerEvent: {}
+[16.686435] (-) TimerEvent: {}
+[16.787962] (-) TimerEvent: {}
+[16.889769] (-) TimerEvent: {}
+[16.990193] (-) TimerEvent: {}
+[17.091295] (-) TimerEvent: {}
+[17.194637] (-) TimerEvent: {}
+[17.295118] (-) TimerEvent: {}
+[17.396284] (-) TimerEvent: {}
+[17.501548] (-) TimerEvent: {}
+[17.603904] (-) TimerEvent: {}
+[17.709156] (-) TimerEvent: {}
+[17.809508] (-) TimerEvent: {}
+[17.914487] (-) TimerEvent: {}
+[18.018507] (-) TimerEvent: {}
+[18.124003] (-) TimerEvent: {}
+[18.225478] (-) TimerEvent: {}
+[18.330064] (-) TimerEvent: {}
+[18.431326] (-) TimerEvent: {}
+[18.533343] (-) TimerEvent: {}
+[18.636753] (-) TimerEvent: {}
+[18.737433] (-) TimerEvent: {}
+[18.837929] (-) TimerEvent: {}
+[18.942766] (-) TimerEvent: {}
+[19.043323] (-) TimerEvent: {}
+[19.146640] (-) TimerEvent: {}
+[19.250779] (-) TimerEvent: {}
+[19.351055] (-) TimerEvent: {}
+[19.455327] (-) TimerEvent: {}
+[19.560629] (-) TimerEvent: {}
+[19.661463] (-) TimerEvent: {}
+[19.763459] (-) TimerEvent: {}
+[19.963527] (-) TimerEvent: {}
+[20.066906] (-) TimerEvent: {}
+[20.168039] (-) TimerEvent: {}
+[20.268593] (-) TimerEvent: {}
+[20.405561] (-) TimerEvent: {}
+[20.536006] (-) TimerEvent: {}
+[20.637288] (-) TimerEvent: {}
+[20.741559] (-) TimerEvent: {}
+[20.845749] (-) TimerEvent: {}
+[20.946131] (-) TimerEvent: {}
+[21.046479] (-) TimerEvent: {}
+[21.241374] (-) TimerEvent: {}
+[21.341759] (-) TimerEvent: {}
+[21.442876] (-) TimerEvent: {}
+[21.543366] (-) TimerEvent: {}
+[21.646883] (-) TimerEvent: {}
+[21.749792] (-) TimerEvent: {}
+[21.853290] (-) TimerEvent: {}
+[21.954419] (-) TimerEvent: {}
+[22.054820] (-) TimerEvent: {}
+[22.157604] (-) TimerEvent: {}
+[22.258630] (-) TimerEvent: {}
+[22.361488] (-) TimerEvent: {}
+[22.463609] (-) TimerEvent: {}
+[22.566409] (-) TimerEvent: {}
+[22.669844] (-) TimerEvent: {}
+[22.771433] (-) TimerEvent: {}
+[22.871730] (-) TimerEvent: {}
+[22.973932] (-) TimerEvent: {}
+[23.077249] (-) TimerEvent: {}
+[23.179081] (-) TimerEvent: {}
+[23.281697] (-) TimerEvent: {}
+[23.384183] (-) TimerEvent: {}
+[23.485155] (-) TimerEvent: {}
+[23.587203] (-) TimerEvent: {}
+[23.689988] (-) TimerEvent: {}
+[23.791335] (-) TimerEvent: {}
+[23.891760] (-) TimerEvent: {}
+[23.992139] (-) TimerEvent: {}
+[24.095021] (-) TimerEvent: {}
+[24.196341] (-) TimerEvent: {}
+[24.297139] (-) TimerEvent: {}
+[24.401375] (-) TimerEvent: {}
+[24.502673] (-) TimerEvent: {}
+[24.606517] (-) TimerEvent: {}
+[24.707167] (-) TimerEvent: {}
+[24.810787] (-) TimerEvent: {}
+[24.914015] (-) TimerEvent: {}
+[25.017068] (-) TimerEvent: {}
+[25.121508] (-) TimerEvent: {}
+[25.222496] (-) TimerEvent: {}
+[25.333110] (-) TimerEvent: {}
+[25.434158] (-) TimerEvent: {}
+[25.539699] (-) TimerEvent: {}
+[25.641069] (-) TimerEvent: {}
+[25.741802] (-) TimerEvent: {}
+[25.842426] (-) TimerEvent: {}
+[25.942825] (-) TimerEvent: {}
+[26.044875] (-) TimerEvent: {}
+[26.149020] (-) TimerEvent: {}
+[26.251290] (-) TimerEvent: {}
+[26.351685] (-) TimerEvent: {}
+[26.453144] (-) TimerEvent: {}
+[26.553750] (-) TimerEvent: {}
+[26.655461] (-) TimerEvent: {}
+[26.757043] (-) TimerEvent: {}
+[26.857491] (-) TimerEvent: {}
+[26.957851] (-) TimerEvent: {}
+[27.058520] (-) TimerEvent: {}
+[27.161917] (-) TimerEvent: {}
+[27.265833] (-) TimerEvent: {}
+[27.366549] (-) TimerEvent: {}
+[27.467155] (-) TimerEvent: {}
+[27.570714] (-) TimerEvent: {}
+[27.674258] (-) TimerEvent: {}
+[27.776661] (-) TimerEvent: {}
+[27.877199] (-) TimerEvent: {}
+[27.977965] (-) TimerEvent: {}
+[28.080064] (-) TimerEvent: {}
+[28.184119] (-) TimerEvent: {}
+[28.284659] (-) TimerEvent: {}
+[28.388037] (-) TimerEvent: {}
+[28.489421] (-) TimerEvent: {}
+[28.589965] (-) TimerEvent: {}
+[28.691980] (-) TimerEvent: {}
+[28.796619] (-) TimerEvent: {}
+[28.901451] (-) TimerEvent: {}
+[29.010712] (-) TimerEvent: {}
+[29.126639] (-) TimerEvent: {}
+[29.230392] (-) TimerEvent: {}
+[29.334010] (-) TimerEvent: {}
+[29.434971] (-) TimerEvent: {}
+[29.535912] (-) TimerEvent: {}
+[29.639164] (-) TimerEvent: {}
+[29.739876] (-) TimerEvent: {}
+[29.844804] (-) TimerEvent: {}
+[29.947814] (-) TimerEvent: {}
+[30.048442] (-) TimerEvent: {}
+[30.151927] (-) TimerEvent: {}
+[30.252474] (-) TimerEvent: {}
+[30.355618] (-) TimerEvent: {}
+[30.458418] (-) TimerEvent: {}
+[30.563087] (-) TimerEvent: {}
+[30.667906] (-) TimerEvent: {}
+[30.772319] (-) TimerEvent: {}
+[30.876063] (-) TimerEvent: {}
+[30.976475] (-) TimerEvent: {}
+[31.079959] (-) TimerEvent: {}
+[31.183741] (-) TimerEvent: {}
+[31.289079] (-) TimerEvent: {}
+[31.391264] (-) TimerEvent: {}
+[31.496438] (-) TimerEvent: {}
+[31.600647] (-) TimerEvent: {}
+[31.701338] (-) TimerEvent: {}
+[31.804760] (-) TimerEvent: {}
+[31.905288] (-) TimerEvent: {}
+[32.006312] (-) TimerEvent: {}
+[32.108002] (-) TimerEvent: {}
+[32.211772] (-) TimerEvent: {}
+[32.313046] (-) TimerEvent: {}
+[32.416522] (-) TimerEvent: {}
+[32.517565] (-) TimerEvent: {}
+[32.620790] (-) TimerEvent: {}
+[32.722461] (-) TimerEvent: {}
+[32.825852] (-) TimerEvent: {}
+[32.926215] (-) TimerEvent: {}
+[33.028769] (-) TimerEvent: {}
+[33.129149] (-) TimerEvent: {}
+[33.233426] (-) TimerEvent: {}
+[33.333903] (-) TimerEvent: {}
+[33.437507] (-) TimerEvent: {}
+[33.539610] (-) TimerEvent: {}
+[33.640305] (-) TimerEvent: {}
+[33.740724] (-) TimerEvent: {}
+[33.842913] (-) TimerEvent: {}
+[33.944020] (-) TimerEvent: {}
+[34.044400] (-) TimerEvent: {}
+[34.147463] (-) TimerEvent: {}
+[34.251317] (-) TimerEvent: {}
+[34.351945] (-) TimerEvent: {}
+[34.454200] (-) TimerEvent: {}
+[34.555094] (-) TimerEvent: {}
+[34.657256] (-) TimerEvent: {}
+[34.762103] (-) TimerEvent: {}
+[34.863205] (-) TimerEvent: {}
+[34.964783] (-) TimerEvent: {}
+[35.067954] (-) TimerEvent: {}
+[35.168465] (-) TimerEvent: {}
+[35.272811] (-) TimerEvent: {}
+[35.374482] (-) TimerEvent: {}
+[35.476044] (-) TimerEvent: {}
+[35.578625] (-) TimerEvent: {}
+[35.680624] (-) TimerEvent: {}
+[35.783274] (-) TimerEvent: {}
+[35.886924] (-) TimerEvent: {}
+[35.989190] (-) TimerEvent: {}
+[36.089815] (-) TimerEvent: {}
+[36.191711] (-) TimerEvent: {}
+[36.293392] (-) TimerEvent: {}
+[36.397330] (-) TimerEvent: {}
+[36.499670] (-) TimerEvent: {}
+[36.600399] (-) TimerEvent: {}
+[36.701545] (-) TimerEvent: {}
+[36.802854] (-) TimerEvent: {}
+[36.906967] (-) TimerEvent: {}
+[37.009728] (-) TimerEvent: {}
+[37.113645] (-) TimerEvent: {}
+[37.214269] (-) TimerEvent: {}
+[37.318296] (-) TimerEvent: {}
+[37.422527] (-) TimerEvent: {}
+[37.525125] (-) TimerEvent: {}
+[37.626393] (-) TimerEvent: {}
+[37.727793] (-) TimerEvent: {}
+[37.828580] (-) TimerEvent: {}
+[37.930680] (-) TimerEvent: {}
+[38.032690] (-) TimerEvent: {}
+[38.134874] (-) TimerEvent: {}
+[38.239556] (-) TimerEvent: {}
+[38.340817] (-) TimerEvent: {}
+[38.442318] (-) TimerEvent: {}
+[38.546581] (-) TimerEvent: {}
+[38.651243] (-) TimerEvent: {}
+[38.753970] (-) TimerEvent: {}
+[38.855715] (-) TimerEvent: {}
+[38.956368] (-) TimerEvent: {}
+[39.061716] (-) TimerEvent: {}
+[39.162991] (-) TimerEvent: {}
+[39.290183] (-) TimerEvent: {}
+[39.395313] (-) TimerEvent: {}
+[39.496067] (-) TimerEvent: {}
+[39.600485] (-) TimerEvent: {}
+[39.704721] (-) TimerEvent: {}
+[39.805489] (-) TimerEvent: {}
+[39.910416] (-) TimerEvent: {}
+[40.015300] (-) TimerEvent: {}
+[40.117882] (-) TimerEvent: {}
+[40.219336] (-) TimerEvent: {}
+[40.324144] (-) TimerEvent: {}
+[40.428216] (-) TimerEvent: {}
+[40.533553] (-) TimerEvent: {}
+[40.637996] (-) TimerEvent: {}
+[40.753032] (-) TimerEvent: {}
+[40.853705] (-) TimerEvent: {}
+[40.955651] (-) TimerEvent: {}
+[41.058492] (-) TimerEvent: {}
+[41.161832] (-) TimerEvent: {}
+[41.262630] (-) TimerEvent: {}
+[41.367134] (-) TimerEvent: {}
+[41.468437] (-) TimerEvent: {}
+[41.569734] (-) TimerEvent: {}
+[41.674687] (-) TimerEvent: {}
+[41.778354] (-) TimerEvent: {}
+[41.880582] (-) TimerEvent: {}
+[41.985960] (-) TimerEvent: {}
+[42.086332] (-) TimerEvent: {}
+[42.186882] (-) TimerEvent: {}
+[42.289155] (-) TimerEvent: {}
+[42.390251] (-) TimerEvent: {}
+[42.490847] (-) TimerEvent: {}
+[42.591545] (-) TimerEvent: {}
+[42.693149] (-) TimerEvent: {}
+[42.798428] (-) TimerEvent: {}
+[42.902306] (-) TimerEvent: {}
+[43.003413] (-) TimerEvent: {}
+[43.107079] (-) TimerEvent: {}
+[43.211475] (-) TimerEvent: {}
+[43.315644] (-) TimerEvent: {}
+[43.417427] (-) TimerEvent: {}
+[43.521416] (-) TimerEvent: {}
+[43.626052] (-) TimerEvent: {}
+[43.729080] (-) TimerEvent: {}
+[43.829596] (-) TimerEvent: {}
+[43.931064] (-) TimerEvent: {}
+[44.031431] (-) TimerEvent: {}
+[44.133334] (-) TimerEvent: {}
+[44.237175] (-) TimerEvent: {}
+[44.337961] (-) TimerEvent: {}
+[44.438818] (-) TimerEvent: {}
+[44.540517] (-) TimerEvent: {}
+[44.641013] (-) TimerEvent: {}
+[44.742043] (-) TimerEvent: {}
+[44.843719] (-) TimerEvent: {}
+[44.948605] (-) TimerEvent: {}
+[45.050182] (-) TimerEvent: {}
+[45.150941] (-) TimerEvent: {}
+[45.252825] (-) TimerEvent: {}
+[45.272829] (franka_description) CommandEnded: {'returncode': 0}
+[45.277611] (franka_description) JobProgress: {'identifier': 'franka_description', 'progress': 'install'}
+[45.318492] (franka_description) Command: {'cmd': ['/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/cmake', '--install', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/franka_description'], 'cwd': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/franka_description', 'env': OrderedDict([('TERM_PROGRAM', 'Apple_Terminal'), ('PROJ_DATA', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/proj'), ('TERM', 'xterm-256color'), ('SHELL', '/bin/zsh'), ('TMPDIR', '/var/folders/kt/9xpwlqks5rs0jycbsnb32wl80000gn/T/'), ('CONDA_SHLVL', '2'), ('CONDA_PROMPT_MODIFIER', '(roboenv-py3.10)'), ('TERM_PROGRAM_VERSION', '452'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('ROS_PYTHON_VERSION', '3'), ('ROS_VERSION', '2'), ('TERM_SESSION_ID', 'D88054F9-133C-4FE2-BA4B-B478BBD6E64A'), ('AMENT_PREFIX_PATH', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10'), ('USER', 'ethandsouza'), ('CONDA_EXE', '/Users/ethandsouza/miniforge3/bin/conda'), ('SSH_AUTH_SOCK', '/private/tmp/com.apple.launchd.idb6ZUpnbQ/Listeners'), ('__CF_USER_TEXT_ENCODING', '0x1F5:0x0:0x0'), ('ROS_OS_OVERRIDE', 'conda:osx'), ('_CE_CONDA', ''), ('CONDA_PREFIX_1', '/Users/ethandsouza/miniforge3'), ('PATH', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin:/Users/ethandsouza/miniforge3/condabin:/Users/ethandsouza/development/tools/flutter/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands'), ('PROJ_NETWORK', 'ON'), ('GSETTINGS_SCHEMA_DIR', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/glib-2.0/schemas'), ('XML_CATALOG_FILES', 'file:///Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/xml/catalog file:///etc/xml/catalog'), ('LaunchInstanceID', '70DC467A-383F-4F2F-9715-0391C6D35898'), ('CONDA_PREFIX', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10'), ('__CFBundleIdentifier', 'com.apple.Terminal'), ('PWD', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/franka_description'), ('COLCON', '1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XPC_FLAGS', '0x0'), ('_CE_M', ''), ('XPC_SERVICE_NAME', '0'), ('HOME', '/Users/ethandsouza'), ('SHLVL', '2'), ('ROS_DISTRO', 'humble'), ('PYTHONPATH', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python310/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages'), ('CONDA_PYTHON_EXE', '/Users/ethandsouza/miniforge3/bin/python'), ('LOGNAME', 'ethandsouza'), ('CONDA_DEFAULT_ENV', 'roboenv-py3.10'), ('ROS_LOCALHOST_ONLY', '0'), ('SECURITYSESSIONID', '186a3'), ('ROS_ETC_DIR', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/ros'), ('_', '/usr/bin/env'), ('CMAKE_PREFIX_PATH', '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10')]), 'shell': False}
+[45.353396] (-) TimerEvent: {}
+[45.356528] (franka_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[45.358569] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//launch\n'}
+[45.359631] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//launch/visualize_franka.launch.py\n'}
+[45.360551] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots\n'}
+[45.361564] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fp3\n'}
+[45.362454] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fp3/joint_limits.yaml\n'}
+[45.362973] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fp3/fp3.urdf.xacro\n'}
+[45.363700] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fp3/kinematics.yaml\n'}
+[45.364314] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fp3/dynamics.yaml\n'}
+[45.364940] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fp3/inertials.yaml\n'}
+[45.365693] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fr3\n'}
+[45.366565] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fr3/joint_limits.yaml\n'}
+[45.367426] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fr3/kinematics.yaml\n'}
+[45.368083] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fr3/dynamics.yaml\n'}
+[45.368371] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fr3/inertials.yaml\n'}
+[45.369023] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fr3/fr3.urdf.xacro\n'}
+[45.370072] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/common\n'}
+[45.370497] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/common/franka_arm.ros2_control.xacro\n'}
+[45.371032] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/common/franka_robot.xacro\n'}
+[45.371825] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/common/franka_arm.xacro\n'}
+[45.372365] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/common/utils.xacro\n'}
+[45.372898] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fer\n'}
+[45.373504] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fer/joint_limits.yaml\n'}
+[45.374375] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fer/kinematics.yaml\n'}
+[45.375128] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fer/dynamics.yaml\n'}
+[45.375738] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fer/inertials.yaml\n'}
+[45.376385] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//robots/fer/fer.urdf.xacro\n'}
+[45.377135] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors\n'}
+[45.377829] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/cobot_pump\n'}
+[45.378684] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/cobot_pump/cobot_pump.urdf.xacro\n'}
+[45.379290] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/cobot_pump/inertials.yaml\n'}
+[45.380231] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/cobot_pump/cobot_pump_arguments.xacro\n'}
+[45.381011] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/franka_hand\n'}
+[45.381898] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/franka_hand/franka_hand.urdf.xacro\n'}
+[45.382784] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/franka_hand/franka_hand_arguments.xacro\n'}
+[45.383464] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/franka_hand/inertials.yaml\n'}
+[45.384158] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/common\n'}
+[45.384859] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/common/ee_with_one_link.xacro\n'}
+[45.385558] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/common/franka_hand.xacro\n'}
+[45.386103] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//end_effectors/common/utils.xacro\n'}
+[45.386746] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes\n'}
+[45.387501] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee\n'}
+[45.388235] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black\n'}
+[45.389000] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/visual\n'}
+[45.389716] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/visual/hand.dae\n'}
+[45.390676] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/visual/finger.dae\n'}
+[45.391224] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/collision\n'}
+[45.391895] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/collision/hand.stl\n'}
+[45.392431] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/cobot_pump\n'}
+[45.392923] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/cobot_pump/visual\n'}
+[45.393457] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/cobot_pump/visual/cobot_pump.dae\n'}
+[45.394021] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/cobot_pump/collision\n'}
+[45.394670] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/cobot_pump/collision/cobot_pump.stl\n'}
+[45.395421] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white\n'}
+[45.396134] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/visual\n'}
+[45.396890] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/visual/hand.dae\n'}
+[45.397216] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/visual/finger.dae\n'}
+[45.397517] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/collision\n'}
+[45.397735] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/collision/hand.stl\n'}
+[45.397951] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms\n'}
+[45.398368] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3\n'}
+[45.399074] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/visual\n'}
+[45.399665] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/visual/link4.dae\n'}
+[45.399824] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/visual/link5.dae\n'}
+[45.399947] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/visual/link7.dae\n'}
+[45.400062] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/visual/link6.dae\n'}
+[45.400220] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/visual/link2.dae\n'}
+[45.400435] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/visual/link3.dae\n'}
+[45.400658] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/visual/link1.dae\n'}
+[45.401053] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/visual/link0.dae\n'}
+[45.401441] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/collision\n'}
+[45.401611] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/collision/link3.stl\n'}
+[45.401736] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/collision/link2.stl\n'}
+[45.401853] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/collision/link0.stl\n'}
+[45.401965] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/collision/link1.stl\n'}
+[45.402533] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/collision/link5.stl\n'}
+[45.403201] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/collision/link4.stl\n'}
+[45.404838] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/collision/link6.stl\n'}
+[45.406233] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fp3/collision/link7.stl\n'}
+[45.406702] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3\n'}
+[45.407008] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/visual\n'}
+[45.407405] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/visual/link4.dae\n'}
+[45.407897] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/visual/link5.dae\n'}
+[45.408305] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/visual/link7.dae\n'}
+[45.408449] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/visual/link6.dae\n'}
+[45.408835] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/visual/link2.dae\n'}
+[45.409330] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/visual/link3.dae\n'}
+[45.409671] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/visual/link1.dae\n'}
+[45.410156] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/visual/link0.dae\n'}
+[45.410502] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/collision\n'}
+[45.410828] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/collision/link3.stl\n'}
+[45.411167] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/collision/link2.stl\n'}
+[45.411583] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/collision/link0.stl\n'}
+[45.411915] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/collision/link1.stl\n'}
+[45.412321] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/collision/link5.stl\n'}
+[45.412700] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/collision/link4.stl\n'}
+[45.413017] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/collision/link6.stl\n'}
+[45.413437] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fr3/collision/link7.stl\n'}
+[45.414447] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer\n'}
+[45.414998] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual\n'}
+[45.415282] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/link4.dae\n'}
+[45.415700] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/link5.dae\n'}
+[45.416109] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/link7.dae\n'}
+[45.416650] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/link6.dae\n'}
+[45.418567] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/link2.dae\n'}
+[45.419125] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/link3.dae\n'}
+[45.419866] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/link1.dae\n'}
+[45.420401] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/link0.dae\n'}
+[45.420737] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/hand.dae\n'}
+[45.421447] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/visual/finger.dae\n'}
+[45.421765] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision\n'}
+[45.422331] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision/hand.stl\n'}
+[45.422652] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision/link3.stl\n'}
+[45.423341] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision/link2.stl\n'}
+[45.423640] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision/link0.stl\n'}
+[45.423788] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision/link1.stl\n'}
+[45.424639] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision/link5.stl\n'}
+[45.424927] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision/link4.stl\n'}
+[45.425282] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision/link6.stl\n'}
+[45.425959] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//meshes/robot_arms/fer/collision/link7.stl\n'}
+[45.426404] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//rviz\n'}
+[45.426748] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//rviz/visualize_franka.rviz\n'}
+[45.428641] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//urdfs\n'}
+[45.429202] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//urdfs/fr3.urdf\n'}
+[45.430009] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description//urdfs/fr3_franka_hand.urdf\n'}
+[45.430328] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/ament_index/resource_index/package_run_dependencies/franka_description\n'}
+[45.430609] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/ament_index/resource_index/parent_prefix_path/franka_description\n'}
+[45.431142] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/environment/ament_prefix_path.sh\n'}
+[45.431903] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/environment/ament_prefix_path.dsv\n'}
+[45.432689] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/environment/path.sh\n'}
+[45.432996] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/environment/path.dsv\n'}
+[45.433331] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/local_setup.bash\n'}
+[45.434046] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/local_setup.sh\n'}
+[45.435569] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/local_setup.zsh\n'}
+[45.436021] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/local_setup.dsv\n'}
+[45.436314] (franka_description) StdoutLine: {'line': b'-- Installing: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/package.dsv\n'}
+[45.437058] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/ament_index/resource_index/packages/franka_description\n'}
+[45.437833] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/cmake/franka_descriptionConfig.cmake\n'}
+[45.438121] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/cmake/franka_descriptionConfig-version.cmake\n'}
+[45.438529] (franka_description) StdoutLine: {'line': b'-- Up-to-date: /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description/share/franka_description/package.xml\n'}
+[45.439148] (franka_description) CommandEnded: {'returncode': 0}
+[45.453780] (-) TimerEvent: {}
+[45.455394] (franka_description) JobEnded: {'identifier': 'franka_description', 'rc': 0}
+[45.459291] (transform_helpers) JobStarted: {'identifier': 'transform_helpers'}
+[45.557703] (-) TimerEvent: {}
+[45.658491] (-) TimerEvent: {}
+[45.759202] (-) TimerEvent: {}
+[45.864553] (-) TimerEvent: {}
+[45.965040] (-) TimerEvent: {}
+[46.067069] (-) TimerEvent: {}
+[46.167555] (-) TimerEvent: {}
+[46.268292] (-) TimerEvent: {}
+[46.369981] (-) TimerEvent: {}
+[46.470369] (-) TimerEvent: {}
+[46.575677] (-) TimerEvent: {}
+[46.676291] (-) TimerEvent: {}
+[46.776823] (-) TimerEvent: {}
+[46.878456] (-) TimerEvent: {}
+[46.978844] (-) TimerEvent: {}
+[47.082207] (-) TimerEvent: {}
+[47.185256] (-) TimerEvent: {}
+[47.286025] (-) TimerEvent: {}
+[47.388541] (-) TimerEvent: {}
+[47.489658] (-) TimerEvent: {}
+[47.590421] (-) TimerEvent: {}
+[47.694424] (-) TimerEvent: {}
+[47.795496] (-) TimerEvent: {}
+[47.897440] (-) TimerEvent: {}
+[47.998738] (-) TimerEvent: {}
+[48.102721] (-) TimerEvent: {}
+[48.205696] (-) TimerEvent: {}
+[48.305959] (-) TimerEvent: {}
+[48.406720] (-) TimerEvent: {}
+[48.512007] (-) TimerEvent: {}
+[48.616820] (-) TimerEvent: {}
+[48.721068] (-) TimerEvent: {}
+[48.821918] (-) TimerEvent: {}
+[48.926279] (-) TimerEvent: {}
+[49.026752] (-) TimerEvent: {}
+[49.127951] (-) TimerEvent: {}
+[49.231952] (-) TimerEvent: {}
+[49.319444] (transform_helpers) Command: {'cmd': ['/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/transform_helpers', 'build', '--build-base', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/transform_helpers/build', 'install', '--record', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/transform_helpers/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/lab1submission/transform_helpers', 'env': {'TERM_PROGRAM': 'Apple_Terminal', 'PROJ_DATA': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/proj', 'TERM': 'xterm-256color', 'SHELL': '/bin/zsh', 'TMPDIR': '/var/folders/kt/9xpwlqks5rs0jycbsnb32wl80000gn/T/', 'CONDA_SHLVL': '2', 'CONDA_PROMPT_MODIFIER': '(roboenv-py3.10)', 'TERM_PROGRAM_VERSION': '452', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'ROS_PYTHON_VERSION': '3', 'ROS_VERSION': '2', 'TERM_SESSION_ID': 'D88054F9-133C-4FE2-BA4B-B478BBD6E64A', 'AMENT_PREFIX_PATH': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10', 'USER': 'ethandsouza', 'CONDA_EXE': '/Users/ethandsouza/miniforge3/bin/conda', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.idb6ZUpnbQ/Listeners', '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0', 'ROS_OS_OVERRIDE': 'conda:osx', '_CE_CONDA': '', 'CONDA_PREFIX_1': '/Users/ethandsouza/miniforge3', 'PATH': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin:/Users/ethandsouza/miniforge3/condabin:/Users/ethandsouza/development/tools/flutter/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands', 'PROJ_NETWORK': 'ON', 'GSETTINGS_SCHEMA_DIR': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/glib-2.0/schemas', 'XML_CATALOG_FILES': 'file:///Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/xml/catalog file:///etc/xml/catalog', 'LaunchInstanceID': '70DC467A-383F-4F2F-9715-0391C6D35898', 'CONDA_PREFIX': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10', '__CFBundleIdentifier': 'com.apple.Terminal', 'PWD': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/transform_helpers', 'COLCON': '1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XPC_FLAGS': '0x0', '_CE_M': '', 'XPC_SERVICE_NAME': '0', 'HOME': '/Users/ethandsouza', 'SHLVL': '2', 'ROS_DISTRO': 'humble', 'PYTHONPATH': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/transform_helpers/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers/lib/python3.10/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python310/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages', 'CONDA_PYTHON_EXE': '/Users/ethandsouza/miniforge3/bin/python', 'LOGNAME': 'ethandsouza', 'CONDA_DEFAULT_ENV': 'roboenv-py3.10', 'CMAKE_PREFIX_PATH': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description', 'ROS_LOCALHOST_ONLY': '0', 'SECURITYSESSIONID': '186a3', 'ROS_ETC_DIR': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/ros', '_': '/usr/bin/env'}, 'shell': False}
+[49.333699] (-) TimerEvent: {}
+[49.434029] (-) TimerEvent: {}
+[49.535324] (-) TimerEvent: {}
+[49.640579] (-) TimerEvent: {}
+[49.741677] (-) TimerEvent: {}
+[49.842611] (-) TimerEvent: {}
+[49.950869] (-) TimerEvent: {}
+[50.051383] (-) TimerEvent: {}
+[50.153081] (-) TimerEvent: {}
+[50.253622] (-) TimerEvent: {}
+[50.355037] (-) TimerEvent: {}
+[50.457672] (-) TimerEvent: {}
+[50.558484] (-) TimerEvent: {}
+[50.659409] (-) TimerEvent: {}
+[50.761215] (-) TimerEvent: {}
+[50.861866] (-) TimerEvent: {}
+[50.967016] (-) TimerEvent: {}
+[50.989687] (transform_helpers) StdoutLine: {'line': b'running egg_info\n'}
+[51.068023] (-) TimerEvent: {}
+[51.115612] (transform_helpers) StdoutLine: {'line': b'writing ../../build/transform_helpers/transform_helpers.egg-info/PKG-INFO\n'}
+[51.173121] (-) TimerEvent: {}
+[51.203286] (transform_helpers) StdoutLine: {'line': b'writing dependency_links to ../../build/transform_helpers/transform_helpers.egg-info/dependency_links.txt\n'}
+[51.278219] (-) TimerEvent: {}
+[51.378655] (-) TimerEvent: {}
+[51.478971] (-) TimerEvent: {}
+[51.479559] (transform_helpers) StdoutLine: {'line': b'writing entry points to ../../build/transform_helpers/transform_helpers.egg-info/entry_points.txt\n'}
+[51.581261] (-) TimerEvent: {}
+[51.654829] (transform_helpers) StdoutLine: {'line': b'writing requirements to ../../build/transform_helpers/transform_helpers.egg-info/requires.txt\n'}
+[51.685909] (-) TimerEvent: {}
+[51.739631] (transform_helpers) StdoutLine: {'line': b'writing top-level names to ../../build/transform_helpers/transform_helpers.egg-info/top_level.txt\n'}
+[51.786266] (-) TimerEvent: {}
+[51.887429] (-) TimerEvent: {}
+[51.896320] (transform_helpers) StdoutLine: {'line': b"reading manifest file '../../build/transform_helpers/transform_helpers.egg-info/SOURCES.txt'\n"}
+[51.897805] (transform_helpers) StdoutLine: {'line': b"writing manifest file '../../build/transform_helpers/transform_helpers.egg-info/SOURCES.txt'\n"}
+[51.898341] (transform_helpers) StdoutLine: {'line': b'running build\n'}
+[51.898514] (transform_helpers) StdoutLine: {'line': b'running build_py\n'}
+[51.899128] (transform_helpers) StdoutLine: {'line': b'running install\n'}
+[51.906237] (transform_helpers) StdoutLine: {'line': b'running install_lib\n'}
+[51.992499] (-) TimerEvent: {}
+[52.023043] (transform_helpers) StdoutLine: {'line': b'running install_data\n'}
+[52.023523] (transform_helpers) StdoutLine: {'line': b'running install_egg_info\n'}
+[52.097336] (-) TimerEvent: {}
+[52.149388] (transform_helpers) StdoutLine: {'line': b"removing '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers/lib/python3.10/site-packages/transform_helpers-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[52.151824] (transform_helpers) StdoutLine: {'line': b'Copying ../../build/transform_helpers/transform_helpers.egg-info to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers/lib/python3.10/site-packages/transform_helpers-0.0.0-py3.10.egg-info\n'}
+[52.157954] (transform_helpers) StdoutLine: {'line': b'running install_scripts\n'}
+[52.199915] (-) TimerEvent: {}
+[52.301672] (-) TimerEvent: {}
+[52.404996] (transform_helpers) StdoutLine: {'line': b'Installing main script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers/lib/transform_helpers\n'}
+[52.405368] (-) TimerEvent: {}
+[52.406334] (transform_helpers) StdoutLine: {'line': b"writing list of installed files to '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/transform_helpers/install.log'\n"}
+[52.490311] (transform_helpers) CommandEnded: {'returncode': 0}
+[52.506192] (-) TimerEvent: {}
+[52.510135] (transform_helpers) JobEnded: {'identifier': 'transform_helpers', 'rc': 0}
+[52.513360] (youbot_kinematics) JobStarted: {'identifier': 'youbot_kinematics'}
+[52.608629] (-) TimerEvent: {}
+[52.709584] (-) TimerEvent: {}
+[52.810352] (-) TimerEvent: {}
+[52.911548] (-) TimerEvent: {}
+[53.012302] (-) TimerEvent: {}
+[53.113540] (-) TimerEvent: {}
+[53.214730] (-) TimerEvent: {}
+[53.317369] (-) TimerEvent: {}
+[53.423122] (-) TimerEvent: {}
+[53.527711] (-) TimerEvent: {}
+[53.628238] (-) TimerEvent: {}
+[53.728843] (-) TimerEvent: {}
+[53.829351] (-) TimerEvent: {}
+[53.930822] (-) TimerEvent: {}
+[54.031399] (-) TimerEvent: {}
+[54.131975] (-) TimerEvent: {}
+[54.237500] (-) TimerEvent: {}
+[54.339064] (-) TimerEvent: {}
+[54.439536] (-) TimerEvent: {}
+[54.540311] (-) TimerEvent: {}
+[54.642019] (-) TimerEvent: {}
+[54.743237] (-) TimerEvent: {}
+[54.844534] (-) TimerEvent: {}
+[54.945607] (-) TimerEvent: {}
+[55.046866] (-) TimerEvent: {}
+[55.149733] (-) TimerEvent: {}
+[55.250470] (-) TimerEvent: {}
+[55.351225] (-) TimerEvent: {}
+[55.474436] (-) TimerEvent: {}
+[55.583617] (-) TimerEvent: {}
+[55.687645] (-) TimerEvent: {}
+[55.789661] (-) TimerEvent: {}
+[55.892190] (-) TimerEvent: {}
+[55.992725] (-) TimerEvent: {}
+[56.094342] (-) TimerEvent: {}
+[56.205180] (-) TimerEvent: {}
+[56.306272] (-) TimerEvent: {}
+[56.407378] (-) TimerEvent: {}
+[56.510774] (-) TimerEvent: {}
+[56.611121] (-) TimerEvent: {}
+[56.662038] (youbot_kinematics) Command: {'cmd': ['/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin/python3.10', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/youbot_kinematics', 'build', '--build-base', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/build', 'install', '--record', '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/final_lab/youbot_kinematics', 'env': {'TERM_PROGRAM': 'Apple_Terminal', 'PROJ_DATA': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/proj', 'TERM': 'xterm-256color', 'SHELL': '/bin/zsh', 'TMPDIR': '/var/folders/kt/9xpwlqks5rs0jycbsnb32wl80000gn/T/', 'CONDA_SHLVL': '2', 'CONDA_PROMPT_MODIFIER': '(roboenv-py3.10)', 'TERM_PROGRAM_VERSION': '452', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'ROS_PYTHON_VERSION': '3', 'ROS_VERSION': '2', 'TERM_SESSION_ID': 'D88054F9-133C-4FE2-BA4B-B478BBD6E64A', 'AMENT_PREFIX_PATH': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10', 'USER': 'ethandsouza', 'CONDA_EXE': '/Users/ethandsouza/miniforge3/bin/conda', 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.idb6ZUpnbQ/Listeners', '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0', 'ROS_OS_OVERRIDE': 'conda:osx', '_CE_CONDA': '', 'CONDA_PREFIX_1': '/Users/ethandsouza/miniforge3', 'PATH': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/bin:/Users/ethandsouza/miniforge3/condabin:/Users/ethandsouza/development/tools/flutter/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands', 'PROJ_NETWORK': 'ON', 'GSETTINGS_SCHEMA_DIR': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/share/glib-2.0/schemas', 'XML_CATALOG_FILES': 'file:///Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/xml/catalog file:///etc/xml/catalog', 'LaunchInstanceID': '70DC467A-383F-4F2F-9715-0391C6D35898', 'CONDA_PREFIX': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10', '__CFBundleIdentifier': 'com.apple.Terminal', 'PWD': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics', 'COLCON': '1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XPC_FLAGS': '0x0', '_CE_M': '', 'XPC_SERVICE_NAME': '0', 'HOME': '/Users/ethandsouza', 'SHLVL': '2', 'ROS_DISTRO': 'humble', 'PYTHONPATH': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/prefix_override:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/transform_helpers/lib/python3.10/site-packages:/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_description/lib/python3.10/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python310/site-packages:/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/lib/python3.10/site-packages', 'CONDA_PYTHON_EXE': '/Users/ethandsouza/miniforge3/bin/python', 'LOGNAME': 'ethandsouza', 'CONDA_DEFAULT_ENV': 'roboenv-py3.10', 'CMAKE_PREFIX_PATH': '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/franka_description', 'ROS_LOCALHOST_ONLY': '0', 'SECURITYSESSIONID': '186a3', 'ROS_ETC_DIR': '/Users/ethandsouza/miniforge3/envs/roboenv-py3.10/etc/ros', '_': '/usr/bin/env'}, 'shell': False}
+[56.711699] (-) TimerEvent: {}
+[56.813073] (-) TimerEvent: {}
+[56.917725] (-) TimerEvent: {}
+[57.018320] (-) TimerEvent: {}
+[57.123183] (-) TimerEvent: {}
+[57.223824] (-) TimerEvent: {}
+[57.329700] (-) TimerEvent: {}
+[57.447817] (-) TimerEvent: {}
+[57.550770] (-) TimerEvent: {}
+[57.651909] (-) TimerEvent: {}
+[57.757103] (-) TimerEvent: {}
+[57.858108] (-) TimerEvent: {}
+[57.960500] (-) TimerEvent: {}
+[58.061016] (-) TimerEvent: {}
+[58.164233] (-) TimerEvent: {}
+[58.267546] (-) TimerEvent: {}
+[58.368386] (-) TimerEvent: {}
+[58.470078] (-) TimerEvent: {}
+[58.573336] (-) TimerEvent: {}
+[58.673686] (-) TimerEvent: {}
+[58.774217] (-) TimerEvent: {}
+[58.897134] (-) TimerEvent: {}
+[59.002424] (-) TimerEvent: {}
+[59.102944] (-) TimerEvent: {}
+[59.204161] (-) TimerEvent: {}
+[59.305232] (-) TimerEvent: {}
+[59.411160] (-) TimerEvent: {}
+[59.516878] (-) TimerEvent: {}
+[59.620397] (-) TimerEvent: {}
+[59.662215] (youbot_kinematics) StdoutLine: {'line': b'running egg_info\n'}
+[59.722928] (-) TimerEvent: {}
+[59.817735] (youbot_kinematics) StdoutLine: {'line': b'writing ../../build/youbot_kinematics/youbot_kinematics.egg-info/PKG-INFO\n'}
+[59.823170] (-) TimerEvent: {}
+[59.914709] (youbot_kinematics) StdoutLine: {'line': b'writing dependency_links to ../../build/youbot_kinematics/youbot_kinematics.egg-info/dependency_links.txt\n'}
+[59.923808] (-) TimerEvent: {}
+[60.028176] (-) TimerEvent: {}
+[60.131373] (-) TimerEvent: {}
+[60.191560] (youbot_kinematics) StdoutLine: {'line': b'writing entry points to ../../build/youbot_kinematics/youbot_kinematics.egg-info/entry_points.txt\n'}
+[60.232254] (-) TimerEvent: {}
+[60.335793] (-) TimerEvent: {}
+[60.441256] (-) TimerEvent: {}
+[60.456441] (youbot_kinematics) StdoutLine: {'line': b'writing requirements to ../../build/youbot_kinematics/youbot_kinematics.egg-info/requires.txt\n'}
+[60.542674] (-) TimerEvent: {}
+[60.549364] (youbot_kinematics) StdoutLine: {'line': b'writing top-level names to ../../build/youbot_kinematics/youbot_kinematics.egg-info/top_level.txt\n'}
+[60.646454] (-) TimerEvent: {}
+[60.718999] (youbot_kinematics) StdoutLine: {'line': b"reading manifest file '../../build/youbot_kinematics/youbot_kinematics.egg-info/SOURCES.txt'\n"}
+[60.720789] (youbot_kinematics) StdoutLine: {'line': b"writing manifest file '../../build/youbot_kinematics/youbot_kinematics.egg-info/SOURCES.txt'\n"}
+[60.721305] (youbot_kinematics) StdoutLine: {'line': b'running build\n'}
+[60.721492] (youbot_kinematics) StdoutLine: {'line': b'running build_py\n'}
+[60.725343] (youbot_kinematics) StdoutLine: {'line': b'running install\n'}
+[60.732847] (youbot_kinematics) StdoutLine: {'line': b'running install_lib\n'}
+[60.746592] (-) TimerEvent: {}
+[60.850068] (-) TimerEvent: {}
+[60.861823] (youbot_kinematics) StdoutLine: {'line': b'byte-compiling /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics/plan_trajectory.py to plan_trajectory.cpython-310.pyc\n'}
+[60.865911] (youbot_kinematics) StdoutLine: {'line': b'running install_data\n'}
+[60.866489] (youbot_kinematics) StdoutLine: {'line': b'running install_egg_info\n'}
+[60.950870] (-) TimerEvent: {}
+[60.995546] (youbot_kinematics) StdoutLine: {'line': b"removing '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[60.996923] (youbot_kinematics) StdoutLine: {'line': b'Copying ../../build/youbot_kinematics/youbot_kinematics.egg-info to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/python3.10/site-packages/youbot_kinematics-0.0.0-py3.10.egg-info\n'}
+[61.004648] (youbot_kinematics) StdoutLine: {'line': b'running install_scripts\n'}
+[61.051333] (-) TimerEvent: {}
+[61.153525] (-) TimerEvent: {}
+[61.254480] (-) TimerEvent: {}
+[61.267898] (youbot_kinematics) StdoutLine: {'line': b'Installing main_kdl script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/youbot_kinematics\n'}
+[61.268634] (youbot_kinematics) StdoutLine: {'line': b'Installing main_student script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/youbot_kinematics\n'}
+[61.269212] (youbot_kinematics) StdoutLine: {'line': b'Installing plan_trajectory script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/youbot_kinematics\n'}
+[61.269875] (youbot_kinematics) StdoutLine: {'line': b'Installing trajectory_visualizer script to /Users/ethandsouza/Documents/GitHub/COMP0246_Labs/install/youbot_kinematics/lib/youbot_kinematics\n'}
+[61.272760] (youbot_kinematics) StdoutLine: {'line': b"writing list of installed files to '/Users/ethandsouza/Documents/GitHub/COMP0246_Labs/build/youbot_kinematics/install.log'\n"}
+[61.351032] (youbot_kinematics) CommandEnded: {'returncode': 0}
+[61.354626] (-) TimerEvent: {}
+[61.368953] (youbot_kinematics) JobEnded: {'identifier': 'youbot_kinematics', 'rc': 0}
+[61.371427] (-) EventReactorShutdown: {}

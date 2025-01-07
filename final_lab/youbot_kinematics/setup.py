@@ -24,6 +24,7 @@ setup(
         'console_scripts': [ 'main_kdl = youbot_kinematics.youbotKineKDL:main',
                              'main_student = youbot_kinematics.youbotKineStudent:main',
                              'plan_trajectory = youbot_kinematics.plan_trajectory:main',
+                             'trajectory_visualizer = youbot_kinematics.trajectory_visualizer:main',
         ],
     },
 )

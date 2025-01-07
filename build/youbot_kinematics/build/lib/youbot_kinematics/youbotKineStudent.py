@@ -57,6 +57,7 @@ class YoubotKinematicStudent(YoubotKinematicBase):
             
         assert isinstance(T, np.ndarray), "Output wasn't of type ndarray"
         assert T.shape == (4, 4), "Output had wrong dimensions"
+       #print("Forward: ", T)
         return T
 
     def get_jacobian(self, joint):
@@ -71,43 +72,162 @@ class YoubotKinematicStudent(YoubotKinematicBase):
         assert isinstance(joint, list)
         assert len(joint) == 5
 
-        # TODO: create the jacobian matrix
+        T = np.eye(4)  # Base frame transformation
+        joint_positions = []
+        z_axes = []
 
-        # Your code starts here ----------------------------
+        # Compute forward kinematics to get positions and z-axes for each joint
+        for i in range(5):
+            A = self.standard_dh(self.dh_params['a'][i],
+                                 self.dh_params['alpha'][i],
+                                 self.dh_params['d'][i],
+                                 self.dh_params['theta'][i] + joint[i])
+            T = T @ A
+            joint_positions.append(T[:3, 3])  # Extract position
+            z_axes.append(T[:3, 2])  # Extract Z-axis
 
-        # For your solution to match the KDL Jacobian, z0 needs to be set [0, 0, -1] instead of [0, 0, 1], since that is how its defined in the URDF.
-        # Both are correct.
-        # Your code starts here ----------------------------
-        raise NotImplementedError
-        # Your code ends here ------------------------------
+        # End-effector position
+        end_effector_pos = joint_positions[-1]
+
+        # Initialize Jacobian matrix (6x5)
+        jacobian = np.zeros((6, 5))
+
+        for i in range(5):
+            # Linear velocity component (cross product of Z-axis and vector to end-effector)
+            jacobian[:3, i] = np.cross(z_axes[i], end_effector_pos - joint_positions[i])
+            # Angular velocity component (Z-axis for revolute joints)
+            jacobian[3:, i] = z_axes[i]
+
         assert jacobian.shape == (6, 5)
         return jacobian
 
     def check_singularity(self, joint):
-        """Check for singularity condition given robot joints. Coursework 2 Question 4c.
-        Reference Lecture 5 slide 30.
+        """Check for singularity condition given robot joints.
 
         Args:
             joint (list): the state of the robot joints. In a youbot those are revolute
 
         Returns:
             singularity (bool): True if in singularity and False if not in singularity.
-
         """
         assert isinstance(joint, list)
         assert len(joint) == 5
-        # TODO: Implement this
-        # Your code starts here ----------------------------
-        raise NotImplementedError
-        # Your code ends here ------------------------------
+
+        # Compute Jacobian matrix
+        jacobian = self.get_jacobian(joint)
+
+        # Check if the determinant of the Jacobian's top 3x3 matrix (linear velocity) is near zero
+        linear_jacobian = jacobian[:3, :]
+        rank = np.linalg.matrix_rank(linear_jacobian)
+
+        singularity = rank < 3  # Singular if rank is less than 3
+
         assert isinstance(singularity, bool)
         return singularity
+
+def inverse_kinematics(kinematics, initial_joints, target_pose, max_iters=1000, tol=1e-6, damping=0.01):
+    """
+    Perform inverse kinematics using the Jacobian with joint limits.
+
+    Args:
+        kinematics: Instance of YoubotKinematicStudent for FK and Jacobian.
+        initial_joints: Initial guess for the joint angles (list of 5).
+        target_pose: Desired 4x4 transformation matrix (np.ndarray).
+        max_iters: Maximum number of iterations (int).
+        tol: Tolerance for stopping condition (float).
+        damping: Damping factor for DLS (float).
+
+    Returns:
+        final_joints: Joint angles that achieve the target pose (list of 5).
+    """
+    # Joint limits in radians (you may need to adjust these for your robot)
+    JOINT_LIMITS = [
+        (0, 5.90),  # Joint 1
+        (0, 1.76),  # Joint 2
+        (-5.18, 0),  # Joint 3
+        (0, 3.58),  # Joint 4
+        (0, 5.85)   # Joint 5
+    ]
+
+    def enforce_joint_limits(joints):
+        """Clamp joint angles to their valid limits."""
+        return [np.clip(joint, limit[0], limit[1]) for joint, limit in zip(joints, JOINT_LIMITS)]
+
+    def is_target_reachable(target_pose, max_reach):
+        """Check if the target pose is within the robot's workspace."""
+        target_position = target_pose[:3, 3]
+        distance = np.linalg.norm(target_position)
+        return distance <= max_reach
+
+    max_reach = 1.0  # Example maximum reach of the robot (adjust as necessary)
+
+    # Check if the target pose is reachable
+    if not is_target_reachable(target_pose, max_reach):
+        print("Target pose is outside the workspace!")
+        return None
+
+    joints = np.array(initial_joints)
+
+    for i in range(max_iters):
+        # Convert `joints` to a list for `forward_kinematics`
+        current_pose = kinematics.forward_kinematics(list(joints))
+        current_position = current_pose[:3, 3]
+        current_orientation = current_pose[:3, :3]  # Rotation matrix
+
+        # Compute error in position
+        target_position = target_pose[:3, 3]
+        position_error = target_position - current_position
+
+        # Compute error in orientation (convert rotation matrices to axis-angle)
+        target_orientation = target_pose[:3, :3]
+        orientation_error_matrix = np.dot(target_orientation, current_orientation.T)
+        orientation_error = np.array([
+            orientation_error_matrix[2, 1] - orientation_error_matrix[1, 2],
+            orientation_error_matrix[0, 2] - orientation_error_matrix[2, 0],
+            orientation_error_matrix[1, 0] - orientation_error_matrix[0, 1]
+        ]) / 2.0
+
+        # Combine position and orientation error
+        error = np.hstack((position_error, orientation_error))
+
+        # Check stopping condition
+        if np.linalg.norm(error) < tol:
+            print(f"Converged in {i} iterations.")
+            return joints.tolist()
+
+        # Compute Jacobian
+        jacobian = kinematics.get_jacobian(list(joints))
+
+        # Compute damped least squares solution
+        J_damped = jacobian.T @ np.linalg.inv(jacobian @ jacobian.T + damping**2 * np.eye(6))
+        delta_theta = J_damped @ error
+
+        # Scale step size to prevent large updates
+        max_delta = 0.1  # Max radians per step
+        if np.linalg.norm(delta_theta) > max_delta:
+            delta_theta = delta_theta * (max_delta / np.linalg.norm(delta_theta))
+
+        # Update joint angles
+        joints += delta_theta
+
+        # Enforce joint limits
+        joints = enforce_joint_limits(joints)
+
+    print("Failed to converge within max iterations.")
+    return list(joints)
+
+
+
+
 
 
 def main(args=None):
     rclpy.init(args=args)
 
     kinematic_student = YoubotKinematicStudent()
+    initial_joints = [2.95, 1.35, -2.59, 0.0, 0.0]  # Initial guess
+    target_pose = np.eye(4)  # Example: Desired pose (identity matrix)
+    target_pose[:3, 3] = [-0.0477, -0.1385, 0.4826]  # Desired position
 
     for i in range(TARGET_JOINT_POSITIONS.shape[0]):
         target_joint_angles = TARGET_JOINT_POSITIONS[i]

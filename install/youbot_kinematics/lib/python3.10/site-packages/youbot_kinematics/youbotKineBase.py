@@ -80,15 +80,40 @@ class YoubotKinematicBase(Node):
         self.pose_broadcaster.sendTransform(transform)
 
     def forward_kinematics(self, joint_readings, up_to_joint=5):
-        """This function solves forward kinematics by multiplying frame transformation up until a specified
-        frame number. The frame transformation used in the computation are derived from dh parameters found in the
+        """
+        This function solves forward kinematics by multiplying frame transformations up until a specified
+        frame number. The frame transformations used in the computation are derived from DH parameters found in the
         init method and joint_readings.
+
         Args:
             joint_readings (list): the state of the robot joints. In a youbot those are revolute
             up_to_joint (int, optional): Specify up to what frame you want to compute forward kinematics.
                 Defaults to 5.
+
+        Returns:
+            np.ndarray: The 4x4 transformation matrix representing the pose of the end-effector.
         """
-        raise NotImplementedError
+        assert len(joint_readings) == len(self.dh_params['a']), "Joint readings length must match DH parameters"
+        
+        # Start with the identity transformation matrix
+        T = np.eye(4)
+
+        for i in range(up_to_joint):
+            # Extract the DH parameters for the current joint
+            a = self.dh_params['a'][i]
+            alpha = self.dh_params['alpha'][i]
+            d = self.dh_params['d'][i]
+            theta = self.dh_params['theta'][i] + joint_readings[i]
+
+            # Compute the individual transformation matrix for this joint
+            T_i = self.standard_dh(a, alpha, d, theta)
+
+            # Multiply the transformation matrices
+            T = T @ T_i
+
+        assert T.shape == (4, 4), "The resulting transformation matrix must be 4x4"
+        print("Forwrd Kinematics: ", T)
+        return T
 
     def get_jacobian(self, joint):
         """Compute Jacobian given the robot joint values. Implementation found in child classes.
@@ -102,26 +127,33 @@ class YoubotKinematicBase(Node):
 
     @staticmethod
     def standard_dh(a, alpha, d, theta):
-        """This function computes the homogeneous 4x4 transformation matrix T_i based on the four standard DH parameters
-         associated with link i and joint i.
+        """
+        This function computes the homogeneous 4x4 transformation matrix T_i based on the four standard DH parameters
+        associated with link i and joint i.
+
         Args:
-            a ([int, float]): Link Length. The distance along x_i ( the common normal) between z_{i-1} and z_i
+            a ([int, float]): Link Length. The distance along x_i (the common normal) between z_{i-1} and z_i.
             alpha ([int, float]): Link twist. The angle between z_{i-1} and z_i around x_i.
             d ([int, float]): Link Offset. The distance along z_{i-1} between x_{i-1} and x_i.
-            theta ([int, float]): Joint angle. The angle between x_{i-1} and x_i around z_{i-1}
+            theta ([int, float]): Joint angle. The angle between x_{i-1} and x_i around z_{i-1}.
+
         Returns:
-            [np.ndarray]: the 4x4 transformation matrix T_i describing  a coordinate transformation from
-            the concurrent coordinate system i to the previous coordinate system i-1
+            np.ndarray: The 4x4 transformation matrix T_i describing a coordinate transformation from
+            the concurrent coordinate system i to the previous coordinate system i-1.
         """
         assert isinstance(a, (int, float)), "wrong input type for a"
-        assert isinstance(alpha, (int, float)), "wrong input type for =alpha"
+        assert isinstance(alpha, (int, float)), "wrong input type for alpha"
         assert isinstance(d, (int, float)), "wrong input type for d"
         assert isinstance(theta, (int, float)), "wrong input type for theta"
-        A = np.zeros((4, 4))
 
-        # TODO: implement a method to get the transform matrix using DH Parameters
-        print("hi")
-        raise NotImplementedError
+        # Compute the transformation matrix using DH parameters
+        A = np.array([
+            [np.cos(theta), -np.sin(theta) * np.cos(alpha), np.sin(theta) * np.sin(alpha), a * np.cos(theta)],
+            [np.sin(theta), np.cos(theta) * np.cos(alpha), -np.cos(theta) * np.sin(alpha), a * np.sin(theta)],
+            [0, np.sin(alpha), np.cos(alpha), d],
+            [0, 0, 0, 1]
+        ])
+
         assert isinstance(A, np.ndarray), "Output wasn't of type ndarray"
         assert A.shape == (4, 4), "Output had wrong dimensions"
         return A

@@ -23,8 +23,8 @@ class YoubotTrajectoryPlanning(Node):
 
         # Create trajectory publisher and a checkpoint publisher to visualize checkpoints
         self.traj_pub = self.create_publisher(JointTrajectory, '/EffortJointInterface_trajectory_controller/command',
-                                        5)
-        self.checkpoint_pub = self.create_publisher(Marker, "checkpoint_positions", 100)
+                                        50)
+        self.checkpoint_pub = self.create_publisher(Marker, "checkpoint_positions", 500)
 
     def run(self):
         """This function is the main run function of the class. When called, it runs question 6 by calling the q6()
@@ -32,94 +32,89 @@ class YoubotTrajectoryPlanning(Node):
         """
         print("run q6a")
         self.get_logger().info("Waiting 5 seconds for everything to load up.")
-        time.sleep(2.0)
+        time.sleep(5.0)
         traj = self.q6()
         traj.header.stamp = self.get_clock().now().to_msg()
         traj.joint_names = ["arm_joint_1", "arm_joint_2", "arm_joint_3", "arm_joint_4", "arm_joint_5"]
+        print("Trajectory: ", traj)
         self.traj_pub.publish(traj)
 
     def q6(self):
-        """ This is the main q6 function. Here, other methods are called to create the shortest path required for this
-        question. Below, a general step-by-step is given as to how to solve the problem.
-        Returns:
-            traj (JointTrajectory): A list of JointTrajectory points giving the robot joint positions to achieve in a
-            given time period.
-        """
-        # TODO: implement this
-        # Steps to solving Q6.
-        # 1. Load in targets from the bagfile (checkpoint data and target joint positions).
-        # 2. Compute the shortest path achievable visiting each checkpoint Cartesian position.
-        # 3. Determine intermediate checkpoints to achieve a linear path between each checkpoint and have a full list of
-        #    checkpoints the robot must achieve. You can publish them to see if they look correct. Look at slides 39 in lecture 7
-        # 4. Convert all the checkpoints into joint values using an inverse kinematics solver.
-        # 5. Create a JointTrajectory message.
-
-        # Your code starts here ------------------------------
-        raise NotImplementedError
-
-        # Your code ends here ------------------------------
-
-        assert isinstance(traj, JointTrajectory)
+        # Load target positions and convert to Cartesian space
+        target_tfs, target_joints = self.load_targets()
+        
+        # Find shortest path through waypoints
+        sorted_order, min_dist = self.get_shortest_path(target_tfs)
+        self.get_logger().info(f'Shortest path order: {sorted_order}, distance: {min_dist}')
+        
+        # Generate intermediate waypoints (10 points between each checkpoint)
+        full_tfs = self.intermediate_tfs(sorted_order, target_tfs, 3)
+        
+        # Publish trajectory for visualization
+        self.publish_traj_tfs(full_tfs)
+        
+        # Convert Cartesian trajectory to joint space
+        joint_trajectory = self.full_checkpoints_to_joints(full_tfs, self.kdl_youbot.current_joint_position)
+        
+        # Create trajectory message
+        traj = JointTrajectory()
+        
+        # Add points to trajectory
+        time_per_point = 0.5  # seconds
+        for i in range(joint_trajectory.shape[1]):
+            point = JointTrajectoryPoint()
+            point.positions = joint_trajectory[:,i].tolist()
+            point.time_from_start.sec = int(i * time_per_point)
+            point.time_from_start.nanosec = int((i * time_per_point % 1) * 1e9)
+            traj.points.append(point)
+        
         return traj
 
+
+
     def load_targets(self):
-        """This function loads the checkpoint data from the TARGET_JOINT_POSITIONS variable. In this variable you will find each
-        row has target joint positions. You need to use forward kinematics to get the goal end-effector position.
-        Returns:
-            target_cart_tf (4x4x5 np.ndarray): The target 4x4 homogenous transformations of the checkpoints found in the
-            bag file. There are a total of 5 transforms (4 checkpoints + 1 initial starting cartesian position).
-            target_joint_positions (5x5 np.ndarray): The target joint values for the 4 checkpoints + 1 initial starting
-            position.
-        """
         num_target_positions = len(TARGET_JOINT_POSITIONS)
-        self.get_logger().info(f"{num_target_positions} target positions")
-        # Initialize arrays for checkpoint transformations and joint positions
         target_joint_positions = np.zeros((5, num_target_positions + 1))
-        # Create a 4x4 transformation matrix, then stack 6 of these matrices together for each checkpoint
         target_cart_tf = np.repeat(np.identity(4), num_target_positions + 1, axis=1).reshape((4, 4, num_target_positions + 1))
-
-        # Get the current starting position of the robot
+        
+        # Set initial position
         target_joint_positions[:, 0] = self.kdl_youbot.current_joint_position
-        # Initialize the first checkpoint as the current end effector position
         target_cart_tf[:, :, 0] = self.kdl_youbot.forward_kinematics(target_joint_positions[:, 0].tolist())
-
-        # TODO: populate the transforms in the target_cart_tf object
-        # populate the joint positions in the target_joint_positions object
-        # Your code starts here ------------------------------
-        raise NotImplementedError
-        # Your code ends here ------------------------------
-
-        self.get_logger().info(f"{target_cart_tf.shape} target poses")
-        assert isinstance(target_cart_tf, np.ndarray)
-        assert target_cart_tf.shape == (4, 4, num_target_positions + 1)
-        assert isinstance(target_joint_positions, np.ndarray)
-        assert target_joint_positions.shape == (5, num_target_positions + 1)
-
+        
+        # Load remaining target positions
+        for i in range(num_target_positions):
+            target_joint_positions[:, i+1] = TARGET_JOINT_POSITIONS[i]
+            target_cart_tf[:, :, i+1] = self.kdl_youbot.forward_kinematics(TARGET_JOINT_POSITIONS[i].tolist())
+        
         return target_cart_tf, target_joint_positions
         
 
     def get_shortest_path(self, checkpoints_tf):
-        """This function takes the checkpoint transformations and computes the order of checkpoints that results
-        in the shortest overall path.
-        Args:
-            checkpoints_tf (np.ndarray): The target checkpoints transformations as a 4x4x5 numpy ndarray.
-        Returns:
-            sorted_order (np.array): An array of size 5 indicating the order of checkpoint
-            min_dist:  (float): The associated distance to the sorted order giving the total estimate for travel
-            distance.
-        """
         num_checkpoints = checkpoints_tf.shape[2]
-        # TODO: implement this method. Make it flexible to accomodate different numbers of targets.
-        # Your code starts here ------------------------------
-        # Sort the shortest distance and permutation here
-        raise NotImplementedError
-        # Your code ends here ------------------------------
-
-        assert isinstance(sorted_order, np.ndarray)
-        assert sorted_order.shape == (num_checkpoints,)
-        assert isinstance(min_dist, float)
-
+        # Start from current position (index 0)
+        checkpoint_indices = list(range(1, num_checkpoints))
+        
+        min_dist = float('inf')
+        sorted_order = None
+        
+        # Try all possible permutations of checkpoint orders
+        for perm in permutations(checkpoint_indices):
+            # Add start position to beginning
+            full_path = [0] + list(perm)
+            total_dist = 0
+            
+            # Calculate total distance for this permutation
+            for i in range(len(full_path)-1):
+                pos1 = checkpoints_tf[0:3, 3, full_path[i]]
+                pos2 = checkpoints_tf[0:3, 3, full_path[i+1]]
+                total_dist += np.linalg.norm(pos2 - pos1)
+                
+            if total_dist < min_dist:
+                min_dist = total_dist
+                sorted_order = np.array(full_path)
+        
         return sorted_order, min_dist
+
 
     def publish_traj_tfs(self, tfs):
         """This function gets a np.ndarray of transforms and publishes them in a color coded fashion to show how the
@@ -150,84 +145,125 @@ class YoubotTrajectoryPlanning(Node):
             self.checkpoint_pub.publish(marker)
 
     def intermediate_tfs(self, sorted_checkpoint_idx, target_checkpoint_tfs, num_points):
-        """This function takes the target checkpoint transforms and the desired order based on the shortest path sorting, 
-        and calls the decoupled_rot_and_trans() function.
-        Args:
-            sorted_checkpoint_idx (list): List describing order of checkpoints to follow.
-            target_checkpoint_tfs (np.ndarray): the state of the robot joints. In a youbot those are revolute
-            num_points (int): Number of intermediate points between checkpoints.
-        Returns:
-            full_checkpoint_tfs: 4x4x(4xnum_points + 5) homogeneous transformations matrices describing the full desired
-            poses of the end-effector position.
-        """
-        # TODO: implement this
-        # Your code starts here ------------------------------
-        raise NotImplementedError
-        # Your code ends here ------------------------------
-       
+        num_segments = len(sorted_checkpoint_idx) - 1
+        total_points = num_segments * num_points + len(sorted_checkpoint_idx)
+        full_checkpoint_tfs = np.zeros((4, 4, total_points))
+        
+        point_idx = 0
+        # For each pair of consecutive checkpoints
+        for i in range(num_segments):
+            start_idx = sorted_checkpoint_idx[i]
+            end_idx = sorted_checkpoint_idx[i+1]
+            
+            # Get intermediate transforms
+            segment_tfs = self.decoupled_rot_and_trans(
+                target_checkpoint_tfs[:,:,start_idx],
+                target_checkpoint_tfs[:,:,end_idx],
+                num_points
+            )
+            
+            # Add checkpoint and intermediate points
+            full_checkpoint_tfs[:,:,point_idx] = target_checkpoint_tfs[:,:,start_idx]
+            point_idx += 1
+            
+            for j in range(num_points):
+                full_checkpoint_tfs[:,:,point_idx] = segment_tfs[:,:,j]
+                point_idx += 1
+        
+        # Add final checkpoint
+        full_checkpoint_tfs[:,:,point_idx] = target_checkpoint_tfs[:,:,sorted_checkpoint_idx[-1]]
+        
         return full_checkpoint_tfs
 
+
     def decoupled_rot_and_trans(self, checkpoint_a_tf, checkpoint_b_tf, num_points):
-        """This function takes two checkpoint transforms and computes the intermediate transformations
-        that follow a straight line path by decoupling rotation and translation.
-        Args:
-            checkpoint_a_tf (np.ndarray): 4x4 transformation describing pose of checkpoint a.
-            checkpoint_b_tf (np.ndarray): 4x4 transformation describing pose of checkpoint b.
-            num_points (int): Number of intermediate points between checkpoint a and checkpoint b.
-        Returns:
-            tfs: 4x4x(num_points) homogeneous transformations matrices describing the full desired
-            poses of the end-effector position from checkpoint a to checkpoint b following a linear path.
-        """
-        self.get_logger().info("checkpoint a")
-        self.get_logger().info(str(checkpoint_a_tf))
-        self.get_logger().info("checkpoint b")
-        self.get_logger().info(str(checkpoint_b_tf))
-        # TODO: implement this
-        # Your code starts here ------------------------------
-        raise NotImplementedError
-        # Your code ends here ------------------------------
+        tfs = np.zeros((4, 4, num_points))
+        
+        # Extract positions
+        pos_a = checkpoint_a_tf[0:3, 3]
+        pos_b = checkpoint_b_tf[0:3, 3]
+        
+        # Extract rotation matrices
+        rot_a = checkpoint_a_tf[0:3, 0:3]
+        rot_b = checkpoint_b_tf[0:3, 0:3]
+        
+        # Compute rotation matrix logarithm
+        rot_a_log = logm(rot_a)
+        rot_b_log = logm(rot_b)
+        
+        # Generate intermediate points
+        for i in range(num_points):
+            s = (i + 1) / (num_points + 1)
+            
+            # Linear interpolation of position
+            pos_i = (1 - s) * pos_a + s * pos_b
+            
+            # SLERP for rotation
+            rot_i_log = (1 - s) * rot_a_log + s * rot_b_log
+            rot_i = expm(rot_i_log)
+            
+            # Combine into transformation matrix
+            tfs[:3, :3, i] = rot_i
+            tfs[:3, 3, i] = pos_i
+            tfs[3, 3, i] = 1.0
+        
         return tfs
 
-    def full_checkpoints_to_joints(self, full_checkpoint_tfs, init_joint_position):
-        """This function takes the full set of checkpoint transformations, including intermediate checkpoints, 
-        and computes the associated joint positions by calling the ik_position_only() function.
-        Args:
-            full_checkpoint_tfs (np.ndarray, 4x4xn): 4x4xn transformations describing all the desired poses of the end-effector
-            to follow the desired path.
-            init_joint_position (np.ndarray):A 5x1 array for the initial joint position of the robot.
-        Returns:
-            q_checkpoints (np.ndarray, 5xn): For each pose, the solution of the position IK to get the joint position
-            for that pose.
-        """
-        # TODO: Implement this
-        # Your code starts here ------------------------------
-        raise NotImplementedError
-        # Your code ends here ------------------------------
 
+    def full_checkpoints_to_joints(self, full_checkpoint_tfs, init_joint_position):
+        num_points = full_checkpoint_tfs.shape[2]
+        q_checkpoints = np.zeros((5, num_points))
+        
+        # Use previous solution as initial guess for next point
+        q_prev = init_joint_position
+        
+        for i in range(num_points):
+            q, error = self.ik_position_only(full_checkpoint_tfs[:,:,i], q_prev)
+            q_checkpoints[:,i] = q
+            q_prev = q
+            
+            if error > 0.01:  # 1cm threshold
+                self.get_logger().warning(f'High IK error at point {i}: {error}m')
+        
         return q_checkpoints
 
-    def ik_position_only(self, pose, q0, lam=0.25, num=500):
-        """This function implements position only inverse kinematics.
-        Args:
-            pose (np.ndarray, 4x4): 4x4 transformations describing the pose of the end-effector position.
-            q0 (np.ndarray, 5x1):A 5x1 array for the initial starting point of the algorithm.
-        Returns:
-            q (np.ndarray, 5x1): The IK solution for the given pose.
-            error (float): The Cartesian error of the solution.
-        """
 
-        # TODO: Implement this
-        # Some useful notes:
-        # We are only interested in position control - take only the position part of the pose as well as elements of the
-        # Jacobian that will affect the position of the error.
 
-        # Your code starts here ------------------------------
-
-        raise NotImplementedError
+    def ik_position_only(self, pose, q0, lam=0.25, num=5000):
+        q = q0.copy()
         
-        # Your code ends here ------------------------------
+        for i in range(num):
+            # Get current end-effector position
+            current_tf = self.kdl_youbot.forward_kinematics(q.tolist())
+            current_pos = current_tf[0:3, 3]
+            
+            # Compute position error
+            target_pos = pose[0:3, 3]
+            error_pos = target_pos - current_pos
+            
+            # Early exit if error is small enough
+            error_magnitude = np.linalg.norm(error_pos)
+            if error_magnitude < 1e-4:
+                return q, error_magnitude
+                
+            # Get Jacobian and extract position components
+            J = self.kdl_youbot.get_jacobian(q.tolist())
+            J_pos = J[0:3, :]  # Position part only
+            
+            # Compute joint updates using damped least squares
+            JJt = J_pos @ J_pos.T
+            damping = lam * np.eye(3)
+            delta_q = J_pos.T @ np.linalg.inv(JJt + damping) @ error_pos
+            
+            # Update joint positions
+            q = q + delta_q
+        
+        # Return final joint positions and error
+        final_tf = self.kdl_youbot.forward_kinematics(q.tolist())
+        final_error = np.linalg.norm(pose[0:3, 3] - final_tf[0:3, 3])
+        return q, final_error
 
-        return q, error
+
 
 
 def main(args=None):
