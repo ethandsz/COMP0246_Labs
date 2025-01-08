@@ -57,7 +57,7 @@ class YoubotKinematicStudent(YoubotKinematicBase):
             
         assert isinstance(T, np.ndarray), "Output wasn't of type ndarray"
         assert T.shape == (4, 4), "Output had wrong dimensions"
-       #print("Forward: ", T)
+        print("Forward: ", T)
         return T
 
     def get_jacobian(self, joint):
